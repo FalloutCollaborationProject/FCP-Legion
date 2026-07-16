@@ -78,7 +78,7 @@
                         <amountRange>2</amountRange>
                     </li>
                     <li>
-                        <thing>MeleeWeapon_Gladius</thing>
+                        <thing>FCP_Melee_Scrap_Machete</thing>
                         <amountRange>2</amountRange>
                     </li>
                 </provisions>
@@ -91,7 +91,7 @@
         <storageIsEnabled>true</storageIsEnabled>
         <storageLabelKey>FCP_Legion_Storage_Label</storageLabelKey>
         <storageDescKey>FCP_Legion_Storage_Desc</storageDescKey>
-        <storageButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Storage</storageButtonIconTexPath>
+        <storageButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Standard_Issue</storageButtonIconTexPath>
 
         <!-- Work Options -->
 
@@ -100,14 +100,14 @@
             <li>
                 <workLabelKey>FCP_Legion_Labor_Label</workLabelKey>
                 <workDescKey>FCP_Legion_Labor_Desc</workDescKey>
-                <workButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Labor</workButtonIconTexPath>
+                <workButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Salary</workButtonIconTexPath>
                 <additionalRestFall>0.3</additionalRestFall>
                 <silverGainPerHour>8</silverGainPerHour>
             </li>
             <li>
                 <workLabelKey>FCP_Legion_Medical_Camp_Label</workLabelKey>
                 <workDescKey>FCP_Legion_Medical_Camp_Desc</workDescKey>
-                <workButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Medical</workButtonIconTexPath>
+                <workButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Missions</workButtonIconTexPath>
                 <additionalRestFall>0.2</additionalRestFall>
                 <tendCaravanMembersEveryTicks>600</tendCaravanMembersEveryTicks>
                 <medicinesToTend>
@@ -118,7 +118,7 @@
             <li>
                 <workLabelKey>FCP_Legion_Combat_Training_Label</workLabelKey>
                 <workDescKey>FCP_Legion_Combat_Training_Desc</workDescKey>
-                <workButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Combat_Training</workButtonIconTexPath>
+                <workButtonIconTexPath>Things/UI/Enlisted/FCP_Legion_Training_Combat</workButtonIconTexPath>
                 <experienceGainsPerHour>
                     <Melee>700</Melee>
                     <Shooting>300</Shooting>

@@ -9,6 +9,8 @@
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_Caesar_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Character_Backstory_Caesar_Child</identifier>
         <slot>Childhood</slot>
         <title>Follower Acolyte</title>
@@ -51,6 +53,8 @@
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_Lanius_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Character_Backstory_Lanius_Child</identifier>
         <slot>Childhood</slot>
         <title>Hidebarks Tribesman</title>
@@ -92,6 +96,8 @@
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_Lucius_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Character_Backstory_Lucius_Child</identifier>
         <slot>Childhood</slot>
         <title>Legion Recruit</title>
@@ -134,6 +140,8 @@
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_Vulpes_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Character_Backstory_Vulpes_Child</identifier>
         <slot>Childhood</slot>
         <title>Tribal Scout</title>
@@ -176,6 +184,8 @@
 
     <BackstoryDef>
         <defName>FCP_Character_Backstory_Aurelius_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Character_Backstory_Aurelius_Child</identifier>
         <slot>Childhood</slot>
         <title>Legion Youth</title>
@@ -218,6 +228,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Dead_Sea_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Dead_Sea_Child</identifier>
         <slot>Childhood</slot>
         <title>Brutal tribal youth</title>
@@ -260,6 +272,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Alexus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Alexus_Child</identifier>
         <slot>Childhood</slot>
         <title>Legion conscript</title>
@@ -305,6 +319,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Canyon_Runner_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Canyon_Runner_Child</identifier>
         <slot>Childhood</slot>
         <title>Canyon survivor</title>
@@ -350,6 +366,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Gaius_Magnus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Gaius_Magnus_Child</identifier>
         <slot>Childhood</slot>
         <title>Legion raised warrior</title>
@@ -395,6 +413,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Centurion_Severus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Centurion_Severus_Child</identifier>
         <slot>Childhood</slot>
         <title>Wasteland enforcer youth</title>
@@ -440,6 +460,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Picus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Picus_Child</identifier>
         <slot>Childhood</slot>
         <title>Observant youth</title>
@@ -484,6 +506,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Cursor_Lucullus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Cursor_Lucullus_Child</identifier>
         <slot>Childhood</slot>
         <title>Swift messenger child</title>
@@ -529,6 +553,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Silus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Silus_Child</identifier>
         <slot>Childhood</slot>
         <title>Deceptive child</title>
@@ -573,6 +599,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Decanus_Severus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Decanus_Severus_Child</identifier>
         <slot>Childhood</slot>
         <title>Legion youth</title>
@@ -618,6 +646,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Karl_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Karl_Child</identifier>
         <slot>Childhood</slot>
         <title>Tribal warrior youth</title>
@@ -663,6 +693,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Otho_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Otho_Child</identifier>
         <slot>Childhood</slot>
         <title>Beast handler child</title>
@@ -706,6 +738,8 @@
 
     <BackstoryDef>
         <defName>FCP_Backstory_Antony_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Backstory_Antony_Child</identifier>
         <slot>Childhood</slot>
         <title>Trader's apprentice</title>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Site: Rebel Purge -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Legion_Rebel_Purge</defName>
+        <label>rebel camp</label>
+        <description>A camp of malcontents defying Legion authority, dug in along a road already lined with old power poles.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Farmhouse_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <requiresFaction>true</requiresFaction>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags>
+            <li>FCP_Site_Legion_Rebel_Purge</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Rebel_Purge_Outpost</defName>
+        <linkWithSite>FCP_Site_Legion_Rebel_Purge</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Rebel_Purge_Power</defName>
+        <linkWithSite>FCP_Site_Legion_Rebel_Purge</linkWithSite>
+        <order>451</order>
+        <genStep Class="GenStep_Power"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Rebel_Purge_Crosses</defName>
+        <linkWithSite>FCP_Site_Legion_Rebel_Purge</linkWithSite>
+        <order>452</order>
+        <genStep Class="GenStep_ScatterGroup">
+            <allowInWaterBiome>false</allowInWaterBiome>
+            <minSpacing>8</minSpacing>
+            <countPer10kCellsRange>1~2</countPer10kCellsRange>
+            <spotMustBeStandable>true</spotMustBeStandable>
+            <allowRoofed>false</allowRoofed>
+            <groups>
+                <li>
+                    <things>
+                        <FCP_Building_PowerLine>1</FCP_Building_PowerLine>
+                    </things>
+                </li>
+            </groups>
+        </genStep>
+    </GenStepDef>
+
+    <!-- Site: Runaway Coffle -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Legion_Runaway_Coffle</defName>
+        <label>raider camp</label>
+        <description>Raiders holding a stolen Legion tribute coffle.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Camp_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <requiresFaction>true</requiresFaction>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags>
+            <li>FCP_Site_Legion_Runaway_Coffle</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Runaway_Coffle_Outpost</defName>
+        <linkWithSite>FCP_Site_Legion_Runaway_Coffle</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Runaway_Coffle_Power</defName>
+        <linkWithSite>FCP_Site_Legion_Runaway_Coffle</linkWithSite>
+        <order>451</order>
+        <genStep Class="GenStep_Power"/>
+    </GenStepDef>
+
+</Defs>

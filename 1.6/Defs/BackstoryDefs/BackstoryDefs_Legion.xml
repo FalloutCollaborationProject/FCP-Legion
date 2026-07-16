@@ -904,6 +904,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Born</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Born</identifier>
         <slot>Childhood</slot>
         <title>Legion Born</title>
@@ -926,6 +928,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Enslaved_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Enslaved_Child</identifier>
         <slot>Childhood</slot>
         <title>Enslaved Child</title>
@@ -950,6 +954,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Purchased_Slave</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Purchased_Slave</identifier>
         <slot>Childhood</slot>
         <title>Purchased Slave</title>
@@ -974,6 +980,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Legionary_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Legionary_Child</identifier>
         <slot>Childhood</slot>
         <title>Legionary Child</title>
@@ -999,6 +1007,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Raised_by_Priestess</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Raised_by_Priestess</identifier>
         <slot>Childhood</slot>
         <title>Raised by Priestess</title>
@@ -1021,6 +1031,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Enslaved_Tribal</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Enslaved_Tribal Tribal</identifier>
         <slot>Childhood</slot>
         <title>Enslaved Tribal</title>
@@ -1043,6 +1055,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Two_Sun_Dweller</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Two_Sun_Dweller</identifier>
         <slot>Childhood</slot>
         <title>Two Sun Dweller</title>
@@ -1066,6 +1080,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Promising_Youngling</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Promising_Youngling</identifier>
         <slot>Childhood</slot>
         <title>Promising Youngling</title>
@@ -1089,6 +1105,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Caravan_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Caravan_Child</identifier>
         <slot>Childhood</slot>
         <title>Legion Caravan Child</title>
@@ -1112,6 +1130,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Cunning_Whelp</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Cunning_Whelp</identifier>
         <slot>Childhood</slot>
         <title>Cunning Whelp</title>
@@ -1136,6 +1156,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Flag_Staff_Kid</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Flag_Staff_Kid</identifier>
         <slot>Childhood</slot>
         <title>Flag Staff Kid</title>
@@ -1159,6 +1181,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Colorado_Kid</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Colorado_Kid</identifier>
         <slot>Childhood</slot>
         <title>Colorado Kid</title>
@@ -1182,6 +1206,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Talented_Hunter</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Talented_Hunter</identifier>
         <slot>Childhood</slot>
         <title>Talented Hunter</title>
@@ -1207,6 +1233,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Healers_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Healers_Child</identifier>
         <slot>Childhood</slot>
         <title>Healer’s Child</title>
@@ -1232,6 +1260,8 @@
     
     <BackstoryDef>
         <defName>FCP_Legion_Coin_Minters_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Coin_Minters_Child</identifier>
         <slot>Childhood</slot>
         <title>Coin Minter’s Child</title>

@@ -192,6 +192,8 @@
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Scrap_Machete</li>
             <li MayRequire="Rick.FCP.UnarmedWeapons">FCP_Unarmed</li>
             <li>NeolithicMeleeDecent</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Gamma_Gun</li>
+            <li MayRequire="Rick.FCP.COA">FCP_Radium_Rifle</li>
         </weaponTags>
         <backstoryFiltersOverride>
             <li>
