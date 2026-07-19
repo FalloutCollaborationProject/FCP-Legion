@@ -19,11 +19,12 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->[asker_nameFull] wants a rebel camp gone. Burn it down, and whoever you take alive, leave them strung up on the roadside posts after. Caesar's law needs witnesses, not just corpses.</li>
-                <li>questDescription->Deserters and profligate sympathizers dug in south of the line. [asker_nameFull] isn't interested in prisoners of war, only examples, and there are power poles enough nearby for that.</li>
-                <li>questDescription->Legion scouts found a rebel camp stirring up talk of revolt. [asker_nameFull] figures the fastest cure for that kind of talk is watching it happen to somebody else first.</li>
-                <li>questDescription->[asker_nameFull]: "Malcontents. Cut the head off it before it spreads. Whatever's still breathing when you're done, string it up where the road can see it."</li>
-                <li>questDescription->Word is a rabble's been mouthing off about Caesar within earshot of a Legion patrol. [asker_nameFull] doesn't send men out there to argue with them.</li>
+                <li>requirements->Requirements: kill every rebel at the camp. If they scatter or the site is abandoned before you get there, there's no one left to make an example of.</li>
+                <li>questDescription->[asker_nameFull] wants a rebel camp gone. Burn it down, and whoever you take alive, leave them strung up on the roadside posts after. Caesar's law needs witnesses, not just corpses.\n\n[requirements]</li>
+                <li>questDescription->Deserters and profligate sympathizers dug in south of the line. [asker_nameFull] isn't interested in prisoners of war, only examples, and there are power poles enough nearby for that.\n\n[requirements]</li>
+                <li>questDescription->Legion scouts found a rebel camp stirring up talk of revolt. [asker_nameFull] figures the fastest cure for that kind of talk is watching it happen to somebody else first.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Malcontents. Cut the head off it before it spreads. Whatever's still breathing when you're done, string it up where the road can see it."\n\n[requirements]</li>
+                <li>questDescription->Word is a rabble's been mouthing off about Caesar within earshot of a Legion patrol. [asker_nameFull] doesn't send men out there to argue with them.\n\n[requirements]</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">

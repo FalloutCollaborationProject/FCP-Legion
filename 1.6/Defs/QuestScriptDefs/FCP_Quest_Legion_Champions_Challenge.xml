@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef MayRequire="Rick.FCP.NCR">
+        <defName>FCP_Quest_Legion_Champions_Challenge</defName>
+        <rootSelectionWeight>0.6</rootSelectionWeight>
+        <rootMinPoints>350</rootMinPoints>
+        <defaultChallengeRating>3</defaultChallengeRating>
+        <canGiveRoyalFavor>true</canGiveRoyalFavor>
+        <expireDaysRange>6~12</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The Champion's Challenge</li>
+                <li>questName->Caesar's Wager</li>
+                <li>questName->Trial by the Colorado</li>
+                <li>questName->A Test of Iron</li>
+                <li>questName->Blood for Glory</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>requirements->Requirements: defeat every Ranger holding the ground. If they abandon the position before you arrive, there's no victory to claim.</li>
+                <li>questDescription->[asker_nameFull] has heard of your colony's reputation and puts it to the test: a company of NCR Rangers has been foolish enough to camp within Legion reach. Break them, and Caesar himself will hear your name.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Word of your fighters reached the Fort. Caesar wants proof they're more than talk. NCR Rangers are dug in nearby - veterans, not conscripts. Break them and the whole Legion will know what you're worth."\n\n[requirements]</li>
+                <li>questDescription->A detachment of NCR Rangers has camped too close to Legion land, daring anyone to move against them. [asker_nameFull] offers this as a trial: prove your colony's strength against soldiers worth the name.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull] frames it as a wager, though everyone knows what it really is: a test. Defeat the Ranger detachment holding this ground, and Caesar's respect - and his tribute - both follow.\n\n[requirements]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.3</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.6</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <factionDefs>
+                        <li MayRequire="Rick.FCP.Legion">FCP_Faction_Caesars_Legion</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>enemyFaction</storeAs>
+                    <factionDefs>
+                        <li MayRequire="Rick.FCP.NCR">FCP_Faction_NCR</li>
+                    </factionDefs>
+                </li>
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>FCP_Site_Legion_Champions_Ground</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>FCP_Faction_NCR</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                </li>
+                <li Class="QuestNode_Multiply">
+                    <value1>$rewardValue</value1>
+                    <value2>2.0</value2>
+                    <storeAs>rewardValue</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <siteFaction>FCP_Faction_NCR</siteFaction>
+                        <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+                    </parms>
+                </li>
+                <li Class="QuestNode_LoopCount">
+                    <loopCount>$(randInt(3,4))</loopCount>
+                    <node Class="QuestNode_GeneratePawn">
+                        <kindDef>FCP_Pawnkind_NCR_Ranger_Veteran</kindDef>
+                        <faction>$enemyFaction</faction>
+                        <addToList>rangers</addToList>
+                    </node>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_SpawnRaiders">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <spawnOnEdge>false</spawnOnEdge>
+                    <pawns>$rangers</pawns>
+                    <radius>16</radius>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(12,24)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <destroyOnCleanup>true</destroyOnCleanup>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelQuestExpired">quest expired: [resolvedQuestName]</label>
+                                <text TKey="LetterTextQuestExpired">The Rangers broke camp before the challenge was met. Caesar's wager goes unclaimed.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.Destroyed</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelQuestFailed">quest failed: [resolvedQuestName]</label>
+                                <text TKey="LetterTextQuestFailed">The Ranger camp was abandoned before the trial could be settled. Quest [resolvedQuestName] ended.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_Letter">
+                                <letterDef>PositiveEvent</letterDef>
+                                <label>Trial won</label>
+                                <text>The Rangers are dead. Word of it will reach the Fort - and Caesar - before the week is out.</text>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>true</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>Caesar's respect</customLetterLabel>
+                                <customLetterText>Legion quartermasters send payment on Caesar's order, along with word that your name is now spoken with something like respect at the Fort.</customLetterText>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+                <li Class="QuestNode_NoWorldObject">
+                    <worldObject>$site</worldObject>
+                    <node Class="QuestNode_End" />
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

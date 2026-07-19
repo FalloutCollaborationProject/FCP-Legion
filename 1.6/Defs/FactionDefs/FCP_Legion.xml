@@ -131,8 +131,28 @@
         <!--__________ Group Makers __________-->
 
         <pawnGroupMakers>
-            <li>
-                <!-- Normal fights, standard mix -->
+            <!-- Caesar's Inner Circle: Lanius, Lucius, and Vulpes -->
+
+            <li Class="FCP.Core.GroupMakerWithCustomChar">
+                <kindDef>Combat</kindDef>
+                <options>
+                    <FCP_Animal_Legion_Guard_Dog MayRequire="Rick.FCP.Animals">3</FCP_Animal_Legion_Guard_Dog>
+                    <FCP_Legion_Veteran>6</FCP_Legion_Veteran>
+                    <FCP_Legion_Veteran_Decanus>3</FCP_Legion_Veteran_Decanus>
+                    <FCP_Legion_Vexillarius>5</FCP_Legion_Vexillarius>
+                    <FCP_Legion_Prime_Decanus>3</FCP_Legion_Prime_Decanus>
+                    <FCP_Legion_Centurion>4</FCP_Legion_Centurion>
+                    <FCP_Legion_Legate>2</FCP_Legion_Legate>
+                </options>
+                <characterDefs>
+                    <li>FCP_Character_Legion_Legate_Lanius</li>
+                    <li>FCP_Character_Legion_Praetorian_Lucius</li>
+                    <li>FCP_Character_Legion_Frumentarius_Vulpes_Inculta</li>
+                </characterDefs>
+                <characterChance>0.20</characterChance>
+            </li>
+            <li Class="FCP.Core.GroupMakerWithCustomChar">
+                <!-- Normal fights, standard mix. A named Centurion may lead the war party. -->
                 <kindDef>Combat</kindDef>
                 <options>
                     <FCP_Animal_Legion_Guard_Dog MayRequire="Rick.FCP.Animals">3</FCP_Animal_Legion_Guard_Dog>
@@ -148,8 +168,38 @@
                     <FCP_Legion_Legate>1</FCP_Legion_Legate>
                     <FCP_Unique_Pawnkind_Caesar>1</FCP_Unique_Pawnkind_Caesar>
                 </options>
+                <characterDefs>
+                    <li>FCP_Character_Legion_Centurion_Aurelius_of_Phoenix</li>
+                    <li>FCP_Character_Legion_Centurion_Dead_Sea</li>
+                    <li>FCP_Character_Legion_Centurion_Alexus</li>
+                    <li>FCP_Character_Legion_Centurion_Canyon_Runner</li>
+                    <li>FCP_Character_Legion_Centurion_Gaius_Magnus</li>
+                    <li>FCP_Character_Legion_Centurion_Severus</li>
+                </characterDefs>
+                <characterChance>0.30</characterChance>
             </li>
-            <li>
+            <li Class="FCP.Core.GroupMakerWithCustomChar">
+                <!-- Lighter skirmish/scout raid: Frumentarii field agents, Decani and the mongrel handler. -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <FCP_Animal_Legion_Guard_Dog MayRequire="Rick.FCP.Animals">4</FCP_Animal_Legion_Guard_Dog>
+                    <FCP_Legion_Scout>10</FCP_Legion_Scout>
+                    <FCP_Legion_Recruit>8</FCP_Legion_Recruit>
+                    <FCP_Legion_Recruit_Decanus>4</FCP_Legion_Recruit_Decanus>
+                    <FCP_Legion_Prime>6</FCP_Legion_Prime>
+                    <FCP_Legion_Vexillarius>4</FCP_Legion_Vexillarius>
+                </options>
+                <characterDefs>
+                    <li>FCP_Character_Legion_Frumentarius_Picus</li>
+                    <li>FCP_Character_Legion_Frumentarius_Cursor_Lucullus</li>
+                    <li>FCP_Character_Legion_Decanus_Severus</li>
+                    <li>FCP_Character_Legion_Decanus_Karl</li>
+                    <li>FCP_Character_Legion_Veteran_Otho</li>
+                </characterDefs>
+                <characterChance>0.30</characterChance>
+            </li>
+            <li Class="FCP.Core.GroupMakerWithCustomChar">
+                <!-- Peaceful visit; the Legion's arms merchant Antony may travel with the party. -->
                 <kindDef>Peaceful</kindDef>
                 <options>
                     <FCP_Animal_Legion_Guard_Dog MayRequire="Rick.FCP.Animals">3</FCP_Animal_Legion_Guard_Dog>
@@ -157,6 +207,10 @@
                     <FCP_Legion_Recruit_Decanus>10</FCP_Legion_Recruit_Decanus>
                     <FCP_Unique_Pawnkind_Caesar>1</FCP_Unique_Pawnkind_Caesar>
                 </options>
+                <characterDefs>
+                    <li>FCP_Character_Legion_Merchant_Antony</li>
+                </characterDefs>
+                <characterChance>0.15</characterChance>
             </li>
             <li>
                 <kindDef>Trader</kindDef>

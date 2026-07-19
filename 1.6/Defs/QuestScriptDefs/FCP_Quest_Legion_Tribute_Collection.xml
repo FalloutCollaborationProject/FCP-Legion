@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef>
+        <defName>FCP_Quest_Legion_Tribute_Collection</defName>
+        <rootSelectionWeight>1.0</rootSelectionWeight>
+        <rootMinPoints>30</rootMinPoints>
+        <defaultChallengeRating>1</defaultChallengeRating>
+        <canGiveRoyalFavor>true</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Tribute Collection</li>
+                <li>questName->Caesar's Due</li>
+                <li>questName->Antony's Run</li>
+                <li>questName->Collecting What's Owed</li>
+                <li>questName->The Tribute Road</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>requirements->Requirements: escort Antony to the tribute ground and keep him alive through the collection. If trouble shows up, protect him - if he dies, the tribute goes unpaid.</li>
+                <li>questDescription->[asker_nameFull] is sending Antony to collect tribute from a settlement that has been slow to pay. A merchant alone invites trouble. Get him there, get the tribute back, and Caesar's due gets paid.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Antony's making a collection run. Good with a ledger, useless in a fight. See that he comes back with the tribute and his throat uncut."\n\n[requirements]</li>
+                <li>questDescription->A settlement under Legion protection owes tribute it hasn't paid. [asker_nameFull] is sending the merchant Antony to collect - politely, if the settlement is wise. Escort him there and back.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull] wants tribute collected without a war party at the gate - it tends to make the next payment easier. Antony will handle the talking. You handle anyone who doesn't want to listen.\n\n[requirements]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.2</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.5</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <factionDefs>
+                        <li MayRequire="Rick.FCP.Legion">FCP_Faction_Caesars_Legion</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GenerateUniqueCharacterPawn">
+                    <characterDef>FCP_Character_Legion_Merchant_Antony</characterDef>
+                    <addToList>antony</addToList>
+                </li>
+                <li Class="QuestNode_SetAllApparelLocked">
+                    <pawns>$antony</pawns>
+                </li>
+                <li Class="QuestNode_JoinPlayer">
+                    <pawns>$antony</pawns>
+                    <joinPlayer>true</joinPlayer>
+                </li>
+                <li Class="QuestNode_ExtraFaction">
+                    <factionOf>$asker</factionOf>
+                    <pawns>$antony</pawns>
+                    <factionType>HomeFaction</factionType>
+                    <inSignalsRemovePawn>
+                        <li>antony.RanWild</li>
+                    </inSignalsRemovePawn>
+                </li>
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>FCP_Site_Legion_Tribute_Ground</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+                    </parms>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_SpawnPawns">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <pawns>$antony</pawns>
+                    <mapParent>$site</mapParent>
+                </li>
+                <li Class="QuestNode_LeaveOnCleanup">
+                    <pawns>$antony</pawns>
+                    <sendStandardLetter>false</sendStandardLetter>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                    <defsToExcludeFromHyperlinks>Human</defsToExcludeFromHyperlinks>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_GetRandomInRangeFloat">
+                                <storeAs>chanceForTrouble</storeAs>
+                                <range>0~1</range>
+                            </li>
+                            <li Class="QuestNode_GreaterOrEqual">
+                                <value1>$chanceForTrouble</value1>
+                                <value2>0.65</value2>
+                                <node Class="QuestNode_Sequence">
+                                    <nodes>
+                                        <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                                            <storeAs>enemyFaction</storeAs>
+                                            <factionDefs>
+                                                <li MayRequire="Rick.FCP.Raiders">FCP_Faction_Raider</li>
+                                                <li>PirateWaster</li>
+                                            </factionDefs>
+                                        </li>
+                                        <li Class="QuestNode_Set">
+                                            <name>pointsForTrouble</name>
+                                            <value>$($points * 0.6)</value>
+                                        </li>
+                                        <li Class="FCP.Core.RadiantQuests.QuestNode_GeneratePawns">
+                                            <storeAs>troublemakers</storeAs>
+                                            <faction>$enemyFaction</faction>
+                                            <pawnGroupKind>Combat</pawnGroupKind>
+                                            <pointsToUse>$pointsForTrouble</pointsToUse>
+                                        </li>
+                                        <li Class="FCP.Core.RadiantQuests.QuestNode_SpawnRaiders">
+                                            <spawnOnEdge>true</spawnOnEdge>
+                                            <pawns>$troublemakers</pawns>
+                                            <radius>20</radius>
+                                        </li>
+                                        <li Class="QuestNode_Letter">
+                                            <label>The collection turns ugly</label>
+                                            <text>Someone doesn't want this tribute paid. Protect Antony.</text>
+                                            <letterDef>ThreatBig</letterDef>
+                                            <lookTargets>$troublemakers</lookTargets>
+                                            <filterDeadPawnsFromLookTargets>true</filterDeadPawnsFromLookTargets>
+                                        </li>
+                                    </nodes>
+                                </node>
+                            </li>
+                            <li Class="QuestNode_Delay">
+                                <delayTicks>$(randInt(6,12)*60000)</delayTicks>
+                                <isQuestTimeout>true</isQuestTimeout>
+                                <node Class="QuestNode_Sequence">
+                                    <nodes>
+                                        <li Class="QuestNode_AnyPawnAlive">
+                                            <pawns>$antony</pawns>
+                                            <node Class="QuestNode_Sequence">
+                                                <nodes>
+                                                    <li Class="QuestNode_Letter">
+                                                        <letterDef>PositiveEvent</letterDef>
+                                                        <label>Tribute collected</label>
+                                                        <text>Antony has the tribute in hand and is ready to head back to the Fort. Caesar's due, paid in full.</text>
+                                                    </li>
+                                                    <li Class="QuestNode_GiveRewards">
+                                                        <parms>
+                                                            <allowGoodwill>true</allowGoodwill>
+                                                            <allowRoyalFavor>true</allowRoyalFavor>
+                                                        </parms>
+                                                        <addCampLootReward>false</addCampLootReward>
+                                                        <customLetterLabel>Payment from the Legion</customLetterLabel>
+                                                        <customLetterText>Legion quartermasters send your cut of the tribute, courtesy of Antony's ledger.</customLetterText>
+                                                    </li>
+                                                    <li Class="QuestNode_End">
+                                                        <outcome>Success</outcome>
+                                                    </li>
+                                                </nodes>
+                                            </node>
+                                        </li>
+                                        <li Class="QuestNode_Letter">
+                                            <label>Antony lost</label>
+                                            <letterDef>NegativeEvent</letterDef>
+                                            <text>Antony didn't survive the collection run. Caesar will want to know why his merchant is dead and his tribute unpaid.</text>
+                                        </li>
+                                        <li Class="QuestNode_End">
+                                            <outcome>Fail</outcome>
+                                            <goodwillChangeAmount>-10</goodwillChangeAmount>
+                                            <goodwillChangeFactionOf>$asker</goodwillChangeFactionOf>
+                                        </li>
+                                    </nodes>
+                                </node>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(15,25)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                        <sendStandardLetter>true</sendStandardLetter>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

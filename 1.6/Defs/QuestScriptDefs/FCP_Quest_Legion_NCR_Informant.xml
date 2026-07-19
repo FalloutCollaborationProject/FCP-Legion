@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <QuestScriptDef MayRequire="Rick.FCP.NCR">
+        <defName>FCP_Quest_Legion_NCR_Informant</defName>
+        <rootSelectionWeight>1.0</rootSelectionWeight>
+        <rootMinPoints>200</rootMinPoints>
+        <defaultChallengeRating>2</defaultChallengeRating>
+        <canGiveRoyalFavor>true</canGiveRoyalFavor>
+        <expireDaysRange>5~10</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->The Profligate Informant</li>
+                <li>questName->Eyes of the Bear</li>
+                <li>questName->Rooting Out the Spies</li>
+                <li>questName->A Debt to Caesar's Justice</li>
+                <li>questName->Silencing the Wire</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>requirements->Requirements: defeat every NCR informant at the cell. If they scatter or the site is abandoned before you find it, their reports get through.</li>
+                <li>questDescription->[asker_nameFull] has word of an NCR cell counting spears and mapping crossings inside Legion land. Caesar does not tolerate spies. Find them before their reports reach the Bear.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Profligate scouts, dressed as traders, asking questions they shouldn't. Kill them before what they know reaches New Vegas. Leave nothing for the Bear to read."\n\n[requirements]</li>
+                <li>questDescription->A cell of NCR informants has been paying locals for information on Legion movements. [asker_nameFull] wants the cell found and ended before the reports leave Legion territory.\n\n[requirements]</li>
+                <li>questDescription->Word reached [asker_nameFull] of NCR agents operating under Caesar's nose. Their deaths will be a message to the next fool the Bear sends.\n\n[requirements]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                    <parms>
+                        <pointsFactorTwoStar>1.4</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1.8</pointsFactorThreeStar>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_AdjustPointsForDistantFight</def>
+                </li>
+                <li Class="QuestNode_GetMap" />
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetFactionFromList">
+                    <storeAs>askerFaction</storeAs>
+                    <factionDefs>
+                        <li MayRequire="Rick.FCP.Legion">FCP_Faction_Caesars_Legion</li>
+                    </factionDefs>
+                </li>
+                <li Class="FCP.Core.RadiantQuests.QuestNode_GetLeaderOfFaction">
+                    <storeAs>asker</storeAs>
+                    <factionToUse>$askerFaction</factionToUse>
+                </li>
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>FCP_Site_Legion_NCR_Informant</tag>
+                        </li>
+                    </sitePartsTags>
+                </li>
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>FCP_Faction_NCR</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                    <parms>
+                        <points>$sitePoints</points>
+                    </parms>
+                </li>
+                <li Class="QuestNode_Multiply">
+                    <value1>$rewardValue</value1>
+                    <value2>1.6</value2>
+                    <storeAs>rewardValue</storeAs>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                    <parms>
+                        <siteFaction>FCP_Faction_NCR</siteFaction>
+                    </parms>
+                </li>
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(12,24)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <destroyOnCleanup>true</destroyOnCleanup>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelQuestExpired">quest expired: [resolvedQuestName]</label>
+                                <text TKey="LetterTextQuestExpired">The informants slipped away before you found their cell. Quest [resolvedQuestName] expired.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.Destroyed</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelQuestFailed">quest failed: [resolvedQuestName]</label>
+                                <text TKey="LetterTextQuestFailed">The cell scattered before it could be cleared. Quest [resolvedQuestName] ended.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+                            </li>
+                            <li Class="QuestNode_GiveRewards">
+                                <parms>
+                                    <allowGoodwill>true</allowGoodwill>
+                                    <allowRoyalFavor>true</allowRoyalFavor>
+                                </parms>
+                                <addCampLootReward>true</addCampLootReward>
+                                <customLetterLabel>Cell silenced</customLetterLabel>
+                                <customLetterText>The informants are dead and their reports with them. Legion quartermasters send tribute for your service to Caesar.</customLetterText>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+                <li Class="QuestNode_NoWorldObject">
+                    <worldObject>$site</worldObject>
+                    <node Class="QuestNode_End" />
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+</Defs>

@@ -19,10 +19,11 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->A coffle got jumped on the road to the Fort, and whoever was running the escort is now sitting in a raider camp along with the tribute. [asker_nameFull] wants them both back.</li>
-                <li>questDescription->[asker_nameFull]: "Raiders hit a supply column and took a hostage along with the coffle. That's Legion property in more ways than one. Get them out."</li>
-                <li>questDescription->One of the Legion's own didn't make it back from a tribute run. [asker_nameFull] traced the trail to a raider camp holding them prisoner, and wants a rescue mounted before Caesar hears his men were taken so easily.</li>
-                <li>questDescription->A supply escort vanished along with the coffle it was guarding. [asker_nameFull] says the survivor is being held somewhere nearby, and Caesar does not leave his people to rot in a cage.</li>
+                <li>requirements->Requirements: reach the site and free the captured Legion prisoner from their cell. Defeating the raiders alone isn't enough - you need to release them. Take too long and they may not be there to save.</li>
+                <li>questDescription->A coffle got jumped on the road to the Fort, and whoever was running the escort is now sitting in a raider camp along with the tribute. [asker_nameFull] wants them both back.\n\n[requirements]</li>
+                <li>questDescription->[asker_nameFull]: "Raiders hit a supply column and took a hostage along with the coffle. That's Legion property in more ways than one. Get them out."\n\n[requirements]</li>
+                <li>questDescription->One of the Legion's own didn't make it back from a tribute run. [asker_nameFull] traced the trail to a raider camp holding them prisoner, and wants a rescue mounted before Caesar hears his men were taken so easily.\n\n[requirements]</li>
+                <li>questDescription->A supply escort vanished along with the coffle it was guarding. [asker_nameFull] says the survivor is being held somewhere nearby, and Caesar does not leave his people to rot in a cage.\n\n[requirements]</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Site: NCR Informant Cell -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Legion_NCR_Informant</defName>
+        <label>NCR informant cell</label>
+        <description>A cell of NCR scouts and informants operating within Legion-held territory.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Generic_Quest_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <requiresFaction>true</requiresFaction>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags>
+            <li>FCP_Site_Legion_NCR_Informant</li>
+        </tags>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_NCR_Informant_Outpost</defName>
+        <linkWithSite>FCP_Site_Legion_NCR_Informant</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+    <!-- Site: Tribute Meeting Ground -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Legion_Tribute_Ground</defName>
+        <label>tribute ground</label>
+        <description>A meeting point where Legion collectors gather tribute from nearby settlements.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Generic_Quest_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags Inherit="False">
+            <li>FCP_Site_Legion_Tribute_Ground</li>
+        </tags>
+        <approachOrderString>Approach the tribute ground</approachOrderString>
+        <approachingReportString>approaching the tribute ground</approachingReportString>
+        <arrivedLetter>Your caravan arrived at the tribute ground.</arrivedLetter>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Tribute_Ground_Outpost</defName>
+        <linkWithSite>FCP_Site_Legion_Tribute_Ground</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+    <!-- Site: Champion's Ground -->
+
+    <SitePartDef>
+        <defName>FCP_Site_Legion_Champions_Ground</defName>
+        <label>champion's ground</label>
+        <description>A cleared arena where the Legion's champion waits, per Caesar's challenge.</description>
+        <workerClass>SitePartWorker_Outpost</workerClass>
+        <siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+        <expandingIconTexture>MapIcons/Sites/FCP_Generic_Quest_Site</expandingIconTexture>
+        <forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags Inherit="False">
+            <li>FCP_Site_Legion_Champions_Ground</li>
+        </tags>
+        <approachOrderString>Enter the champion's ground</approachOrderString>
+        <approachingReportString>approaching the champion's ground</approachingReportString>
+        <arrivedLetter>Your caravan arrived at the champion's ground.</arrivedLetter>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>FCP_Site_Legion_Champions_Ground_Outpost</defName>
+        <linkWithSite>FCP_Site_Legion_Champions_Ground</linkWithSite>
+        <order>450</order>
+        <genStep Class="GenStep_Outpost"/>
+    </GenStepDef>
+
+</Defs>
