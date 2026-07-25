@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Cyberdog Conversion __________-->
+
+    <HediffDef MayRequire="Rick.FCP.Animals" ParentName="FCP_Hediff_CyberdogConversion_Base">
+        <defName>FCP_Hediff_CyberdogConversion_LegionGuardDog</defName>
+        <comps>
+            <li Class="FCP.Core.Hediffs.HediffCompProperties_BodyGraphicOverride">
+                <texPath>Things/Pawn/Animal/Legion_Guard_Dog/Cyberdog/FCP_Legion_Guard_Dog</texPath>
+                <drawSize>1.6</drawSize>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

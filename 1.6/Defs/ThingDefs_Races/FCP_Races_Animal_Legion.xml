@@ -21,6 +21,9 @@
         <tradeTags>
             <li>FCP_Animal_Legion_Guard_Dog</li>
         </tradeTags>
+        <recipes>
+            <li>FCP_Surgery_CyberdogConversion_LegionGuardDog</li>
+        </recipes>
     </ThingDef>
 
     <!--__ PawnKinds __-->

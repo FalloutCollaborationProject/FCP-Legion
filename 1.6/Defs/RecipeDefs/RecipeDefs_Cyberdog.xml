@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Cyberdog Conversion Surgery __________-->
+
+    <RecipeDef MayRequire="Rick.FCP.Animals" ParentName="FCP_Surgery_CyberdogConversion_Base">
+        <defName>FCP_Surgery_CyberdogConversion_LegionGuardDog</defName>
+        <addsHediff>FCP_Hediff_CyberdogConversion_LegionGuardDog</addsHediff>
+    </RecipeDef>
+
+</Defs>
