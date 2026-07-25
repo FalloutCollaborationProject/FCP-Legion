@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>FCP_Item_Legion_Ear</defName>
+        <label>Legion ear</label>
+        <description>A severed ear taken from a fallen Legionary. Grim proof of a kill - the sort of trophy the NCR pays a bounty for, since a dead Legion soldier is one less on the line at the next crossing.</description>
+        <graphicData>
+            <texPath>Things/Items/Dogtags/FCP_NCR_Dogtags</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Corpse_Drop</soundInteract>
+        <soundDrop>Corpse_Drop</soundDrop>
+        <stackLimit>100</stackLimit>
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <MarketValue>6</MarketValue>
+            <Mass>0.02</Mass>
+            <Flammability>0.6</Flammability>
+            <DeteriorationRate>3</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <allowedArchonexusCount>1000</allowedArchonexusCount>
+    </ThingDef>
+
+</Defs>

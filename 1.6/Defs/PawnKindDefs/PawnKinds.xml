@@ -186,7 +186,7 @@
         </requiredWorkTags>
         <weaponMoney>150~300</weaponMoney>
         <weaponTags>
-            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Psitol</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Makeshift</li>
             <li MayRequire="Rick.FCP.MeleeWeapons">FCP_Melee_Scrap_Machete</li>

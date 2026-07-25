@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>FCP_Scenario_Legion_Cohort</defName>
+        <label>Legion Cohort</label>
+        <description>Caesar's Legion does not retreat, but a cohort can be cut off. Scattered by a Ranger ambush deep in contested territory, your decanus and what's left of his men have to make their own way now - Legion discipline or nothing else standing between them and the wasteland.</description>
+        <scenario>
+            <summary>A handful of Legion soldiers, cut off from the main army, start over in the wastes.</summary>
+            <parts>
+
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <leftBehindPawnKind>FCP_Legion_Recruit</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>FCP_Legion_Recruit_Decanus</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Legion_Recruit</kindDef>
+                            <count>3</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Legion_Scout</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+
+                <li Class="FCP.Enlist.ScenPart_StartEnlisted">
+                    <def>FCP_StartEnlisted</def>
+                    <factionDef>FCP_Faction_Caesars_Legion</factionDef>
+                    <enlistOptionsDef>FCP_Enlistment_Legion</enlistOptionsDef>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                    <count>150</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Apparel_Legion_Recruit_Armor</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Apparel_Legion_Recruit_Helmet</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="Rick.FCP.BallisticWeapons">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Gun_SawnOff_Shotgun</thingDef>
+                    <count>5</count>
+                </li>
+
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>It is the year [FCP_Year]. The Rangers hit the column at the river crossing and Caesar's banner went down with half the cohort. Your decanus rallied who he could and marched them west, away from NCR patrols, away from anyone who'd recognize Legion colors.\n\nProfligates or not, this ground is empty enough to hold. The Legion teaches that discipline survives where men don't. Prove it.</text>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>
