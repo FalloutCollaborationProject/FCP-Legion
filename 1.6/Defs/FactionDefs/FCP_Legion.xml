@@ -306,6 +306,7 @@
             </li> -->
             <!-- Clusters and biome configuration -->
             <li Class="FCP.Factions.FactionExtension_SettlementControl">
+                <maxSettlements>4</maxSettlements>
                 <allowedBiomes>
                     <li MayRequire="FIP.Arktos">Arktos_CentralValley</li>
                     <li MayRequire="FIP.Arktos">Arktos_Divide</li>
@@ -323,6 +324,71 @@
                 </allowedBiomes>
                 <clustered>true</clustered>
                 <clusterRadius>30</clusterRadius>
+                <namedSettlements>
+                    <!-- The Fort -->
+                    <li>
+                        <name>The Fort</name>
+                        <guaranteedCharacters>
+                            <li>FCP_Character_Legion_Caesar</li>
+                            <li>FCP_Character_Legion_Praetorian_Lucius</li>
+                            <li>FCP_Character_Legion_Merchant_Antony</li>
+                        </guaranteedCharacters>
+                        <traders>
+                            <li>
+                                <traderName>Antony's Armory</traderName>
+                                <traderKind>FCP_Trader_TheFort_AntonysArmory</traderKind>
+                            </li>
+                            <li>
+                                <traderName>Fort Quartermaster</traderName>
+                                <traderKind>FCP_Trader_TheFort_Quartermaster</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Cottonwood Cove -->
+                    <li>
+                        <name>Cottonwood Cove</name>
+                        <guaranteedCharacters>
+                            <li>FCP_Character_Legion_Frumentarius_Silus</li>
+                            <li>FCP_Character_Legion_Veteran_Otho</li>
+                        </guaranteedCharacters>
+                        <traders>
+                            <li>
+                                <traderName>Silus' Outpost</traderName>
+                                <traderKind>FCP_Trader_CottonwoodCove_SilusOutpost</traderKind>
+                            </li>
+                            <li>
+                                <traderName>Cove Slave Depot</traderName>
+                                <traderKind>FCP_Caravan_Legion_Slave_Trader</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Nelson -->
+                    <li>
+                        <name>Nelson</name>
+                        <guaranteedCharacters>
+                            <li>FCP_Character_Legion_Centurion_Dead_Sea</li>
+                        </guaranteedCharacters>
+                        <traders>
+                            <li>
+                                <traderName>Dead Sea's Garrison</traderName>
+                                <traderKind>FCP_Trader_Nelson_DeadSeasGarrison</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Techatticup Mine -->
+                    <li>
+                        <name>Techatticup Mine</name>
+                        <guaranteedCharacters>
+                            <li>FCP_Character_Legion_Centurion_Alexus</li>
+                        </guaranteedCharacters>
+                        <traders>
+                            <li>
+                                <traderName>Alexus' Quarry</traderName>
+                                <traderKind>FCP_Trader_TechatticupMine_AlexusQuarry</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                </namedSettlements>
             </li>
         </modExtensions>
     </FactionDef>
