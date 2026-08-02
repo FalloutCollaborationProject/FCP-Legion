@@ -306,7 +306,7 @@
             </li> -->
             <!-- Clusters and biome configuration -->
             <li Class="FCP.Factions.FactionExtension_SettlementControl">
-                <maxSettlements>4</maxSettlements>
+                <maxSettlements>6</maxSettlements>
                 <allowedBiomes>
                     <li MayRequire="FIP.Arktos">Arktos_CentralValley</li>
                     <li MayRequire="FIP.Arktos">Arktos_Divide</li>
@@ -385,6 +385,30 @@
                             <li>
                                 <traderName>Alexus' Quarry</traderName>
                                 <traderKind>FCP_Trader_TechatticupMine_AlexusQuarry</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Nipton -->
+                    <li>
+                        <name>Nipton</name>
+                        <traders>
+                            <li>
+                                <traderName>Nipton Ash Heap</traderName>
+                                <traderKind>FCP_Trader_Nipton_AshHeap</traderKind>
+                            </li>
+                            <li>
+                                <traderName>Nipton Slave Pens</traderName>
+                                <traderKind>FCP_Caravan_Legion_Slave_Trader</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Boulder City -->
+                    <li>
+                        <name>Boulder City</name>
+                        <traders>
+                            <li>
+                                <traderName>Boulder City Muster</traderName>
+                                <traderKind>FCP_Trader_BoulderCity_Muster</traderKind>
                             </li>
                         </traders>
                     </li>

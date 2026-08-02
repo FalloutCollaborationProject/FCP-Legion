@@ -461,4 +461,142 @@
         </stockGenerators>
     </TraderKindDef>
 
+    <!--_____ Nipton _____-->
+
+    <!--___ Nipton Ash Heap ___-->
+
+    <TraderKindDef>
+        <defName>FCP_Trader_Nipton_AshHeap</defName>
+        <label>Nipton Ash Heap</label>
+        <stockGenerators>
+
+            <!--__ Currency __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                <countRange>700~1600</countRange>
+            </li>
+
+            <!--__ Resources (scavenged from the burned-out town, made an example of) __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Steel</thingDef>
+                <countRange>100~250</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WoodLog</thingDef>
+                <countRange>80~200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Cloth</thingDef>
+                <countRange>60~150</countRange>
+            </li>
+
+            <!--__ Weapons __-->
+
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.MeleeWeapons">
+                <thingDef>FCP_Melee_Scrap_Machete</thingDef>
+                <countRange>3~7</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.BallisticWeapons">
+                <thingDef>FCP_Gun_Cowboy_Repeater</thingDef>
+                <countRange>1~3</countRange>
+            </li>
+
+            <!--__ Legion Apparel __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Legion_Recruit_Armor</thingDef>
+                <countRange>2~5</countRange>
+            </li>
+
+            <!--__ Buying __-->
+
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>PlantFoodRaw</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>WeaponMelee</tag>
+            </li>
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!--_____ Boulder City _____-->
+
+    <!--___ Boulder City Muster ___-->
+
+    <TraderKindDef>
+        <defName>FCP_Trader_BoulderCity_Muster</defName>
+        <label>Boulder City Muster</label>
+        <stockGenerators>
+
+            <!--__ Currency __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                <countRange>800~1800</countRange>
+            </li>
+
+            <!--__ Weapons (forward staging ground for the push on Hoover Dam) __-->
+
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.MeleeWeapons">
+                <thingDef>FCP_Melee_Scrap_Machete</thingDef>
+                <countRange>3~7</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.BallisticWeapons">
+                <thingDef>FCP_Gun_Cowboy_Repeater</thingDef>
+                <countRange>2~5</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.BallisticWeapons">
+                <thingDef>FCP_Lever_Action_Rifle</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+
+            <!--__ Grenades __-->
+
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.ExplosiveWeapons">
+                <thingDefs>
+                    <li>FCP_Grenade_Fragmentation</li>
+                    <li>FCP_Grenade_Molotov_Cocktail</li>
+                </thingDefs>
+                <countRange>3~7</countRange>
+            </li>
+
+            <!--__ Legion Apparel __-->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Legion_Prime_Armor</thingDef>
+                <countRange>2~5</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Apparel_Legion_Prime_Helmet</thingDef>
+                <countRange>2~5</countRange>
+            </li>
+
+            <!--__ Medicine __-->
+
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+                <thingDef>FCP_Chem_Healing_Powder</thingDef>
+                <countRange>20~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+                <thingDef>FCP_Chem_Stimpak</thingDef>
+                <countRange>8~20</countRange>
+            </li>
+
+            <!--__ Buying __-->
+
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>WeaponMelee</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>WeaponRanged</tag>
+            </li>
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+
+        </stockGenerators>
+    </TraderKindDef>
+
 </Defs>
