@@ -306,7 +306,7 @@
             </li> -->
             <!-- Clusters and biome configuration -->
             <li Class="FCP.Factions.FactionExtension_SettlementControl">
-                <maxSettlements>6</maxSettlements>
+                <maxSettlements>12</maxSettlements>
                 <allowedBiomes>
                     <li MayRequire="FIP.Arktos">Arktos_CentralValley</li>
                     <li MayRequire="FIP.Arktos">Arktos_Divide</li>
@@ -409,6 +409,66 @@
                             <li>
                                 <traderName>Boulder City Muster</traderName>
                                 <traderKind>FCP_Trader_BoulderCity_Muster</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Flagstaff -->
+                    <li>
+                        <name>Flagstaff</name>
+                        <traders>
+                            <li>
+                                <traderName>Praetorian Armory</traderName>
+                                <traderKind>FCP_Trader_Flagstaff_PraetorianArmory</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Two Sun -->
+                    <li>
+                        <name>Two Sun</name>
+                        <traders>
+                            <li>
+                                <traderName>Two Sun Forge</traderName>
+                                <traderKind>FCP_Trader_TwoSun_Forge</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Phoenix -->
+                    <li>
+                        <name>Phoenix</name>
+                        <traders>
+                            <li>
+                                <traderName>Phoenix Apothecary</traderName>
+                                <traderKind>FCP_Trader_Phoenix_Apothecary</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Denver -->
+                    <li>
+                        <name>Denver</name>
+                        <traders>
+                            <li>
+                                <traderName>Denver Garrison</traderName>
+                                <traderKind>FCP_Trader_Denver_Garrison</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Dry Wells -->
+                    <li>
+                        <name>Dry Wells</name>
+                        <traders>
+                            <li>
+                                <traderName>Dry Wells Slave Pens</traderName>
+                                <traderKind>FCP_Caravan_Legion_Slave_Trader</traderKind>
+                            </li>
+                        </traders>
+                    </li>
+                    <!-- Legion Safehouse -->
+                    <li>
+                        <name>Legion Safehouse</name>
+                        <traders>
+                            <li>
+                                <traderName>Atticus' Cache</traderName>
+                                <traderKind>FCP_Trader_LegionSafehouse_AtticusCache</traderKind>
                             </li>
                         </traders>
                     </li>
