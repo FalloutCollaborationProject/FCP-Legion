@@ -833,4 +833,154 @@
         </inventoryOptions>
     </PawnKindDef>
 
+    <!-- Ulysses -->
+
+    <PawnKindDef ParentName="FCP_LegionkindBase">
+        <defName>FCP_Unique_Pawnkind_Ulysses</defName>
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <label>Ulysses</label>
+        <defaultFactionDef>FCP_Faction_Caesars_Legion</defaultFactionDef>
+        <combatPower>95</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelRequired>
+            <li>FCP_Apparel_Legion_Explorer_Armor</li>
+            <li>FCP_Apparel_Legion_Explorer_Hood</li>
+        </apparelRequired>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>7~8</initialWillRange>
+        <initialResistanceRange>32~42</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Ulysses_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Ulysses_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <countRange>80~150</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
+                    <countRange>2~4</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.Chems">
+                    <thingDef>FCP_Chem_Healing_Powder</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Cato Hostilius -->
+
+    <PawnKindDef ParentName="FCP_LegionkindBase">
+        <defName>FCP_Unique_Pawnkind_Cato_Hostilius</defName>
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <label>Agent Cato</label>
+        <defaultFactionDef>FCP_Faction_Caesars_Legion</defaultFactionDef>
+        <combatPower>92</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <apparelRequired>
+            <li>FCP_Apparel_Legion_Vexillarius_Armor</li>
+            <li>FCP_Apparel_Legion_Vexillarius_Helmet</li>
+        </apparelRequired>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>6~7</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Cato_Hostilius_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Cato_Hostilius_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>2~4</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.Chems">
+                    <thingDef>FCP_Chem_Healing_Powder</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Veteran Atticus -->
+
+    <PawnKindDef ParentName="FCP_LegionkindBase">
+        <defName>FCP_Unique_Pawnkind_Atticus</defName>
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <label>Quartermaster Atticus</label>
+        <defaultFactionDef>FCP_Faction_Caesars_Legion</defaultFactionDef>
+        <combatPower>80</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelRequired>
+            <li>FCP_Apparel_Legion_Veteran_Armor</li>
+            <li>FCP_Apparel_Legion_Veteran_Helmet</li>
+        </apparelRequired>
+        <weaponMoney>150~300</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>5~6</initialWillRange>
+        <initialResistanceRange>20~28</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Atticus_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Atticus_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                    <countRange>50~100</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.Chems">
+                    <thingDef>FCP_Chem_Healing_Powder</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
 </Defs>

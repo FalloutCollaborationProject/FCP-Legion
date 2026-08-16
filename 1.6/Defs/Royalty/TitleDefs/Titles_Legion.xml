@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Title Defs __________-->
+
+    <!--_____ Caesar's Legion Titles _____-->
+
+    <!-- Recruit Legionary -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Recruit</defName>
+        <label>Recruit Legionary</label>
+        <description>The lowest rank in Caesar's Legion. Recruits are broken of their old lives and drilled into soldiers, taught to fear their Decanus more than any enemy.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>0</seniority>
+        <favorCost>1</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Prime Legionary -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Prime</defName>
+        <label>Prime Legionary</label>
+        <description>Prime Legionaries have survived their first campaigns and earned better arms for it, trusted to hold a line without a Decanus barking over their shoulder.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>150</seniority>
+        <favorCost>5</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>1</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Veteran Legionary -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Veteran</defName>
+        <label>Veteran Legionary</label>
+        <description>Veteran Legionaries stand at the fork every proven soldier faces in the Legion: take up the standard as a Vexillarius, or vanish into the shadows as a Frumentarius.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>300</seniority>
+        <favorCost>8</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Vexillarius -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Vexillarius</defName>
+        <label>Vexillarius</label>
+        <description>The Vexillarius carries the Legion's standard into battle, a position of open pride rather than stealth, marking them as the first target and the last to fall back.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>450</seniority>
+        <favorCost>9</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Frumentarius Initiate -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Frumentarius_Initiate</defName>
+        <label>Frumentarius Initiate</label>
+        <description>Having chosen the shadow over the standard, a Frumentarius Initiate learns to move through enemy territory unseen, gathering the intelligence Caesar's campaigns depend on.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>450</seniority>
+        <favorCost>9</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Centurion -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Centurion</defName>
+        <label>Centurion</label>
+        <description>Centurions command a century of Legionaries in the field, feared by recruits and enemies alike, and answerable only to a Legate.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>600</seniority>
+        <favorCost>10</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>2</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Frumentarius -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Frumentarius</defName>
+        <label>Frumentarius</label>
+        <description>A full Frumentarius operates alone deep in hostile territory, gathering intelligence, spreading fear, and removing threats to the Legion before Caesar ever hears of them.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>650</seniority>
+        <favorCost>11</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>3</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Legate -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Legate</defName>
+        <label>Legate</label>
+        <description>A Legate commands entire legions in Caesar's name, answerable to no one but Caesar himself, and known to strike terror into whole regions by reputation alone.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>750</seniority>
+        <favorCost>12</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>3</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Master Frumentarius -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Master_Frumentarius</defName>
+        <label>Master Frumentarius</label>
+        <description>The Master Frumentarius runs Caesar's entire network of spies and assassins, trusted with secrets that would see a lesser soldier executed for merely overhearing them.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>850</seniority>
+        <favorCost>13</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Praetorian -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Praetorian</defName>
+        <label>Praetorian</label>
+        <description>Praetorians form Caesar's personal guard, the finest warriors in the Legion, sworn to die before harm reaches their god-emperor.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>900</seniority>
+        <favorCost>13</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+    </RoyalTitleDef>
+
+    <!-- Caesar -->
+
+    <RoyalTitleDef ParentName="FCP_Base_Empire_Titles">
+        <defName>FCP_Title_Legion_Caesar</defName>
+        <label>Caesar</label>
+        <description>Caesar rules the Legion as an iron-fisted god-emperor, the self-proclaimed son of Mars, and the final word on every campaign, every execution, and every law.</description>
+        <tags>
+            <li>FCP_Title_Legion</li>
+        </tags>
+        <seniority>950</seniority>
+        <favorCost>14</favorCost>
+        <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+        <commonality>1</commonality>
+        <allowDignifiedMeditationFocus>True</allowDignifiedMeditationFocus>
+        <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+        <permitPointsAwarded>4</permitPointsAwarded>
+    </RoyalTitleDef>
+
+</Defs>

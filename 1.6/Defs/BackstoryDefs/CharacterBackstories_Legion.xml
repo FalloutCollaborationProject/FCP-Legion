@@ -777,4 +777,133 @@
         <bodyTypeGlobal>Male</bodyTypeGlobal>
     </BackstoryDef>
 
+    <!--_____ Ulysses _____-->
+
+    <!-- Childhood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Ulysses_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <identifier>FCP_Character_Backstory_Ulysses_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Twisted Hairs Tribesman</title>
+        <titleShort>Tribesman</titleShort>
+        <description>[PAWN_nameDef] was born into the Twisted Hairs, a tribe that struck an alliance with the fledgling Legion in its early years. [PAWN_pronoun] grew up believing that bargain would protect [PAWN_possessive] people. Instead, once the campaign it served was won, Caesar broke the alliance and turned on the tribe that had trusted him.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Ulysses_Child</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <!-- Adulthood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Ulysses_Adult</defName>
+        <identifier>FCP_Character_Backstory_Ulysses_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>The Frumentarius Who Walked Away</title>
+        <titleShort>Deserter</titleShort>
+        <description>[PAWN_nameDef] became one of Caesar's finest Frumentarii, traveling the west under a courier's guise until [PAWN_pronoun] found Hoover Dam under NCR occupation and turned Caesar's ambitions toward it. Rather than see that war through, [PAWN_pronoun] deserted and settled in a struggling border town, hoping to build something better than the Legion or the NCR ever offered. A single package, carried in by a courier who never knew what it held, tore that town apart from underneath. [PAWN_nameDef] survived the wreckage and has never stopped hunting for who was responsible.</description>
+        <skillGains>
+            <Melee>7</Melee>
+            <Social>5</Social>
+            <Intellectual>6</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Ulysses_Adult</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Male</bodyTypeGlobal>
+    </BackstoryDef>
+
+    <!--_____ Cato Hostilius _____-->
+
+    <!-- Childhood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Cato_Hostilius_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <identifier>FCP_Character_Backstory_Cato_Hostilius_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Legionary Child</title>
+        <titleShort>Legionary Child</titleShort>
+        <description>[PAWN_nameDef] was born to a Legionary father and raised on the march, quicker with words than with a blade even as a boy. [PAWN_possessive] instructors marked [PAWN_objective] early for the Frumentarii rather than the line.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Cato_Hostilius_Child</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <!-- Adulthood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Cato_Hostilius_Adult</defName>
+        <identifier>FCP_Character_Backstory_Cato_Hostilius_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Frumentarius Near the Dam</title>
+        <titleShort>Frumentarius</titleShort>
+        <description>[PAWN_nameDef] operates in the towns ringing Hoover Dam, passing as a merchant, a courier, anything the mission requires. [PAWN_possessive] latest work has [PAWN_objective] threading a plot against the NCR's president, a job that could end the war outright if it isn't unraveled first.</description>
+        <skillGains>
+            <Social>6</Social>
+            <Melee>4</Melee>
+            <Intellectual>4</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Cato_Hostilius_Adult</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    </BackstoryDef>
+
+    <!--_____ Veteran Atticus _____-->
+
+    <!-- Childhood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Atticus_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <identifier>FCP_Character_Backstory_Atticus_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Legion Recruit</title>
+        <titleShort>Recruit</titleShort>
+        <description>[PAWN_nameDef] came up through the ranks the hard way, surviving campaigns that killed most of the recruits [PAWN_pronoun] trained alongside. [PAWN_pronoun] learned early to keep gear in working order, since a dull blade got a Legionary killed as surely as a coward did.</description>
+        <skillGains>
+            <Melee>3</Melee>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Atticus_Child</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <!-- Adulthood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Atticus_Adult</defName>
+        <identifier>FCP_Character_Backstory_Atticus_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Safehouse Quartermaster</title>
+        <titleShort>Quartermaster</titleShort>
+        <description>Too scarred to march but too useful to discard, [PAWN_nameDef] runs the cache at the Legion Safehouse, keeping weapons, medicine, and supplies flowing to agents passing through NCR territory. [PAWN_pronoun] has buried enough Frumentarii to know exactly what a body needs before it goes out the door.</description>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Melee>4</Melee>
+            <Social>3</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Atticus_Adult</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Male</bodyTypeGlobal>
+    </BackstoryDef>
+
 </Defs>

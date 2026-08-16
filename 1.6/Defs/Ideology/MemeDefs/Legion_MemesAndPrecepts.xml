@@ -72,4 +72,39 @@
         </disagreeableTraits>
     </MemeDef>
 
+    <!--__________ Roles __________-->
+
+    <!-- Centurion -->
+
+    <PreceptDef ParentName="PreceptRoleMultiBase">
+        <defName>FCP_IdeoRole_Legion_Centurion</defName>
+        <label>Centurion</label>
+        <description>Centurions have proven themselves in enough battles to command their own century, feared by recruits and enemies alike.</description>
+        <iconPath>Things/UI/Ideology/FCP_Might_is_Right</iconPath>
+        <roleRequirements>
+            <li Class="RoleRequirement_MinSkillAny">
+                <skills>
+                    <Melee>13</Melee>
+                </skills>
+            </li>
+        </roleRequirements>
+        <roleRequiredWorkTags>
+            <li>Violent</li>
+        </roleRequiredWorkTags>
+        <requiredMemes>
+            <li>FCP_Meme_Legionism</li>
+        </requiredMemes>
+        <roleEffects>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>MeleeHitChance</statDef>
+                <modifier>5</modifier>
+            </li>
+            <li Class="RoleEffect_PawnStatOffset">
+                <statDef>SocialImpact</statDef>
+                <modifier>0.08</modifier>
+            </li>
+        </roleEffects>
+        <displayOrderInImpact>1</displayOrderInImpact>
+    </PreceptDef>
+
 </Defs>

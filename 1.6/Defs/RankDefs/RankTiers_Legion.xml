@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Caesar's Legion Ranks __________-->
+
+    <!--_____ Trunk _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Recruit</defName>
+        <label>Recruit Legionary</label>
+        <description>The lowest rank in Caesar's Legion. Recruits are broken of their old lives and drilled into soldiers.</description>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Recruit</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Prime</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Prime</defName>
+        <label>Prime Legionary</label>
+        <description>Prime Legionaries have survived their first campaigns and earned better arms for it.</description>
+        <minDaysInRank>3</minDaysInRank>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Prime</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Veteran</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Veteran</defName>
+        <label>Veteran Legionary</label>
+        <description>Veteran Legionaries stand at the fork every proven soldier faces: take up the standard as a Vexillarius, or vanish into the shadows as a Frumentarius.</description>
+        <minDaysInRank>6</minDaysInRank>
+        <skillRequirements>
+            <Melee>5</Melee>
+        </skillRequirements>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Veteran</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Vexillarius</li>
+            <li>FCP_Rank_Legion_FrumentariusInitiate</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Path of the Standard _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Vexillarius</defName>
+        <label>Vexillarius</label>
+        <description>The Vexillarius carries the Legion's standard into battle, the first target and the last to fall back.</description>
+        <pathName>Path of the Standard</pathName>
+        <minDaysInRank>9</minDaysInRank>
+        <skillRequirements>
+            <Melee>9</Melee>
+        </skillRequirements>
+        <grantHediff>FCP_Hediff_Legion_Rank_Vexillarius</grantHediff>
+        <trainingXpPerHour>
+            <Melee>600</Melee>
+            <Social>50</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Novice</expedition>
+        <discipline>Combat</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Vexillarius</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Centurion</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Centurion</defName>
+        <label>Centurion</label>
+        <description>Centurions command a century of Legionaries in the field, feared by recruits and enemies alike.</description>
+        <minDaysInRank>13</minDaysInRank>
+        <skillRequirements>
+            <Melee>13</Melee>
+            <Social>5</Social>
+        </skillRequirements>
+        <minSquiresTrained>1</minSquiresTrained>
+        <grantHediff>FCP_Hediff_Legion_Rank_Centurion</grantHediff>
+        <trainingXpPerHour>
+            <Melee>750</Melee>
+            <Social>100</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Veteran</expedition>
+        <discipline>Combat</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Centurion</correspondingRoyalTitle>
+        <correspondingIdeoRole MayRequire="Ludeon.RimWorld.Ideology">FCP_IdeoRole_Legion_Centurion</correspondingIdeoRole>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Legate</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Legate</defName>
+        <label>Legate</label>
+        <description>A Legate commands entire legions in Caesar's name, answerable to no one but Caesar himself.</description>
+        <minDaysInRank>18</minDaysInRank>
+        <skillRequirements>
+            <Melee>16</Melee>
+            <Social>8</Social>
+        </skillRequirements>
+        <minSquiresTrained>2</minSquiresTrained>
+        <grantHediff>FCP_Hediff_Legion_Rank_Legate</grantHediff>
+        <trainingXpPerHour>
+            <Melee>900</Melee>
+            <Social>150</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Elite</expedition>
+        <discipline>Combat</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Legate</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Praetorian</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Praetorian</defName>
+        <label>Praetorian</label>
+        <description>Praetorians form Caesar's personal guard, the finest warriors in the Legion, sworn to die before harm reaches their god-emperor.</description>
+        <minDaysInRank>24</minDaysInRank>
+        <skillRequirements>
+            <Melee>19</Melee>
+            <Social>10</Social>
+        </skillRequirements>
+        <minSquiresTrained>3</minSquiresTrained>
+        <minMissionsCompleted>3</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Legion_Rank_Praetorian</grantHediff>
+        <trainingXpPerHour>
+            <Melee>1050</Melee>
+            <Social>200</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Sentinel</expedition>
+        <discipline>Combat</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Praetorian</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Caesar</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Path of the Frumentarius _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_FrumentariusInitiate</defName>
+        <label>Frumentarius Initiate</label>
+        <description>Having chosen the shadow over the standard, a Frumentarius Initiate learns to move through enemy territory unseen, gathering the intelligence Caesar's campaigns depend on.</description>
+        <pathName>Path of the Frumentarius</pathName>
+        <minDaysInRank>9</minDaysInRank>
+        <skillRequirements>
+            <Melee>7</Melee>
+            <Social>7</Social>
+        </skillRequirements>
+        <grantHediff>FCP_Hediff_Legion_Rank_FrumentariusInitiate</grantHediff>
+        <trainingXpPerHour>
+            <Melee>400</Melee>
+            <Social>250</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Novice</expedition>
+        <discipline>Scholarly</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Frumentarius_Initiate</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Frumentarius</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Frumentarius</defName>
+        <label>Frumentarius</label>
+        <description>A full Frumentarius operates alone deep in hostile territory, gathering intelligence and removing threats to the Legion before Caesar ever hears of them.</description>
+        <minDaysInRank>14</minDaysInRank>
+        <skillRequirements>
+            <Melee>11</Melee>
+            <Social>12</Social>
+        </skillRequirements>
+        <minMissionsCompleted>1</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Legion_Rank_Frumentarius</grantHediff>
+        <trainingXpPerHour>
+            <Melee>550</Melee>
+            <Social>350</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Veteran</expedition>
+        <discipline>Scholarly</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Frumentarius</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_MasterFrumentarius</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_MasterFrumentarius</defName>
+        <label>Master Frumentarius</label>
+        <description>The Master Frumentarius runs Caesar's entire network of spies and assassins, trusted with secrets that would see a lesser soldier executed for merely overhearing them.</description>
+        <minDaysInRank>22</minDaysInRank>
+        <skillRequirements>
+            <Melee>15</Melee>
+            <Social>18</Social>
+        </skillRequirements>
+        <minMissionsCompleted>3</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Legion_Rank_MasterFrumentarius</grantHediff>
+        <trainingXpPerHour>
+            <Melee>700</Melee>
+            <Social>450</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Elite</expedition>
+        <discipline>Scholarly</discipline>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Master_Frumentarius</correspondingRoyalTitle>
+        <nextTierOptions>
+            <li>FCP_Rank_Legion_Caesar</li>
+        </nextTierOptions>
+    </FCP.Ranks.RankTierDef>
+
+    <!--_____ Summit _____-->
+
+    <FCP.Ranks.RankTierDef>
+        <defName>FCP_Rank_Legion_Caesar</defName>
+        <label>Caesar</label>
+        <description>Caesar rules the Legion as an iron-fisted god-emperor, the final word on every campaign, every execution, and every law.</description>
+        <minDaysInRank>30</minDaysInRank>
+        <skillRequirements>
+            <Social>15</Social>
+        </skillRequirements>
+        <minSquiresTrained>3</minSquiresTrained>
+        <minMissionsCompleted>3</minMissionsCompleted>
+        <grantHediff>FCP_Hediff_Legion_Rank_Caesar</grantHediff>
+        <trainingXpPerHour>
+            <Melee>1100</Melee>
+            <Social>400</Social>
+        </trainingXpPerHour>
+        <expedition>FCP_Expedition_Legion_Sentinel</expedition>
+        <correspondingRoyalTitle MayRequire="Ludeon.RimWorld.Royalty">FCP_Title_Legion_Caesar</correspondingRoyalTitle>
+        <isCommanderTier>true</isCommanderTier>
+        <auraRadius>16</auraRadius>
+        <auraHediff>FCP_Hediff_Legion_Caesar_Presence</auraHediff>
+        <rallyHediff>FCP_Hediff_Legion_Caesar_Rally</rallyHediff>
+        <rallyCooldownDays>2</rallyCooldownDays>
+    </FCP.Ranks.RankTierDef>
+
+</Defs>

@@ -9,6 +9,7 @@
         <defName>FCP_Enlistment_Legion</defName>
         <minGoodwillRequrementToEnlist>10</minGoodwillRequrementToEnlist>
         <enlistGoodwillGain>5</enlistGoodwillGain>
+        <minGoodwillUponEnlist>75</minGoodwillUponEnlist>
 
         <!-- Enlistment Options -->
 
@@ -32,8 +33,8 @@
         <missionsMenuDescriptionKey>FCP_Legion_Menu_Missions_Desc</missionsMenuDescriptionKey>
         <missionsMenuSelectQuestKey>FCP_Legion_Menu_Missions_Select_Quest</missionsMenuSelectQuestKey>
         <missionsMenuStartQuestKey>FCP_Legion_Menu_Missions_Start_Quest</missionsMenuStartQuestKey>
-        <missionsQuestCost>50</missionsQuestCost>
-        <missionsMenuStartQuestNoEnoughMoneyKey>FCP_Legion_Not_Enough_Money</missionsMenuStartQuestNoEnoughMoneyKey>
+        <missionsBountyRewardRange>30~80</missionsBountyRewardRange>
+        <missionsMenuCollectBountyKey>FCP_Legion_Menu_Missions_Collect_Bounty</missionsMenuCollectBountyKey>
 
         <!-- Salary Options -->
 

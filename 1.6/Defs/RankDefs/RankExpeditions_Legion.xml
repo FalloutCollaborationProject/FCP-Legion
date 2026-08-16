@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Legion Rank Expeditions __________-->
+
+    <!-- Loot -->
+
+    <ThingSetMakerDef>
+        <defName>FCP_LegionExpeditionLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>FCP_Currency_Legion_Denarius</li>
+                        <li>Steel</li>
+                        <li>MedicineHerbal</li>
+                        <li>MealSurvivalPack</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <!-- Novice -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Legion_Novice</defName>
+        <label>border raid</label>
+        <description>A short raid along the Legion's frontier to put down resistance and remind neighboring settlements who rules the river.</description>
+        <durationDays>3~5</durationDays>
+        <xpReward>
+            <Melee>200</Melee>
+        </xpReward>
+        <lootMaker>FCP_LegionExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>50~150</lootMarketValueRange>
+        <siteRevealChance>0.15</siteRevealChance>
+        <failureChance>0.12</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Legion_Novice_1</li>
+            <li>FCP_Rank_Expedition_Legion_Novice_2</li>
+            <li>FCP_Rank_Expedition_Legion_Novice_3</li>
+            <li>FCP_Rank_Expedition_Legion_Novice_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Veteran -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Legion_Veteran</defName>
+        <label>punitive campaign</label>
+        <description>A tasked campaign to break a settlement that defied Caesar's tribute, the kind of mission that spreads word faster than any messenger.</description>
+        <durationDays>6~8</durationDays>
+        <xpReward>
+            <Melee>400</Melee>
+            <Social>100</Social>
+        </xpReward>
+        <lootMaker>FCP_LegionExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>150~350</lootMarketValueRange>
+        <siteRevealChance>0.25</siteRevealChance>
+        <failureChance>0.1</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Legion_Veteran_1</li>
+            <li>FCP_Rank_Expedition_Legion_Veteran_2</li>
+            <li>FCP_Rank_Expedition_Legion_Veteran_3</li>
+            <li>FCP_Rank_Expedition_Legion_Veteran_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Elite -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Legion_Elite</defName>
+        <label>conquest campaign</label>
+        <description>A solo operation deep into contested territory, the kind only a proven Centurion or Frumentarius is trusted to run alone.</description>
+        <durationDays>8~10</durationDays>
+        <xpReward>
+            <Melee>600</Melee>
+            <Social>150</Social>
+        </xpReward>
+        <lootMaker>FCP_LegionExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>300~600</lootMarketValueRange>
+        <siteRevealChance>0.35</siteRevealChance>
+        <failureChance>0.08</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Legion_Elite_1</li>
+            <li>FCP_Rank_Expedition_Legion_Elite_2</li>
+            <li>FCP_Rank_Expedition_Legion_Elite_3</li>
+            <li>FCP_Rank_Expedition_Legion_Elite_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+    <!-- Sentinel -->
+
+    <FCP.Ranks.RankExpeditionDef>
+        <defName>FCP_Expedition_Legion_Sentinel</defName>
+        <label>Caesar's crusade</label>
+        <description>A long-range campaign carried out in Caesar's own name, the kind of mission that decides whether new territory kneels or burns.</description>
+        <durationDays>10~14</durationDays>
+        <xpReward>
+            <Melee>800</Melee>
+            <Social>200</Social>
+        </xpReward>
+        <lootMaker>FCP_LegionExpeditionLootMaker</lootMaker>
+        <lootMarketValueRange>500~900</lootMarketValueRange>
+        <siteRevealChance>0.5</siteRevealChance>
+        <failureChance>0.05</failureChance>
+        <returnFlavorKeys>
+            <li>FCP_Rank_Expedition_Legion_Sentinel_1</li>
+            <li>FCP_Rank_Expedition_Legion_Sentinel_2</li>
+            <li>FCP_Rank_Expedition_Legion_Sentinel_3</li>
+            <li>FCP_Rank_Expedition_Legion_Sentinel_4</li>
+        </returnFlavorKeys>
+    </FCP.Ranks.RankExpeditionDef>
+
+</Defs>

@@ -21,7 +21,8 @@
 	<FCP_Legion_Missions_Desc>Assignment descriptions</FCP_Legion_Missions_Desc>
 	<FCP_Legion_Menu_Missions_Desc>As you enter the camp, you ask around about any assignments that need completing for the glory of Caesar.</FCP_Legion_Menu_Missions_Desc>
 	<FCP_Legion_Menu_Missions_Select_Quest>Select an Assignment: </FCP_Legion_Menu_Missions_Select_Quest>
-	<FCP_Legion_Menu_Missions_Start_Quest>Start Assignment ({0})</FCP_Legion_Menu_Missions_Start_Quest>
+	<FCP_Legion_Menu_Missions_Start_Quest>Accept Assignment</FCP_Legion_Menu_Missions_Start_Quest>
+	<FCP_Legion_Menu_Missions_Collect_Bounty>Collect Reward</FCP_Legion_Menu_Missions_Collect_Bounty>
 	<FCP_Cancel>Cancel</FCP_Cancel>
 	<FCP_Legion_Not_Enough_Money>Not enough denarii</FCP_Legion_Not_Enough_Money>
 

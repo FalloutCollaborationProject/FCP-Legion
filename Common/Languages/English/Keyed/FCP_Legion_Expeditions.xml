@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Expedition Return Flavor Text __________-->
+
+	<!-- Novice -->
+
+	<FCP_Rank_Expedition_Legion_Novice_1>{PAWN} put down a small band of profligate scavengers squatting near the frontier and left their gear for the Legion.</FCP_Rank_Expedition_Legion_Novice_1>
+	<FCP_Rank_Expedition_Legion_Novice_2>{PAWN} walked the river line, chased off a handful of stragglers, and came back with nothing worth reporting to a Centurion.</FCP_Rank_Expedition_Legion_Novice_2>
+	<FCP_Rank_Expedition_Legion_Novice_3>{PAWN} rounded up a small camp of unaligned settlers and marched them back for judgment.</FCP_Rank_Expedition_Legion_Novice_3>
+	<FCP_Rank_Expedition_Legion_Novice_4>{PAWN} spent the raid burning out a den of raiders who'd been picking off caravans.</FCP_Rank_Expedition_Legion_Novice_4>
+
+	<!-- Veteran -->
+
+	<FCP_Rank_Expedition_Legion_Veteran_1>{PAWN} broke a settlement that had refused tribute and made sure word of it reached the next town over.</FCP_Rank_Expedition_Legion_Veteran_1>
+	<FCP_Rank_Expedition_Legion_Veteran_2>{PAWN} hunted down a band of deserters and dealt with them the way the Legion deals with cowards.</FCP_Rank_Expedition_Legion_Veteran_2>
+	<FCP_Rank_Expedition_Legion_Veteran_3>{PAWN} spent the campaign mapping a stretch of contested ground, marking it fit for the next legion to hold.</FCP_Rank_Expedition_Legion_Veteran_3>
+	<FCP_Rank_Expedition_Legion_Veteran_4>{PAWN} came back with a cracked shield and a line of new slaves in tow.</FCP_Rank_Expedition_Legion_Veteran_4>
+
+	<!-- Elite -->
+
+	<FCP_Rank_Expedition_Legion_Elite_1>{PAWN} went in alone where a century would have drawn too much attention, and left nothing standing.</FCP_Rank_Expedition_Legion_Elite_1>
+	<FCP_Rank_Expedition_Legion_Elite_2>{PAWN} ran the operation exactly as ordered - in, break the resistance, out before word could spread.</FCP_Rank_Expedition_Legion_Elite_2>
+	<FCP_Rank_Expedition_Legion_Elite_3>{PAWN} spent the better part of two weeks deep in contested territory and returned with intelligence Caesar will want to hear.</FCP_Rank_Expedition_Legion_Elite_3>
+	<FCP_Rank_Expedition_Legion_Elite_4>{PAWN} didn't say much about what happened out there, just delivered the report and asked for new orders.</FCP_Rank_Expedition_Legion_Elite_4>
+
+	<!-- Sentinel -->
+
+	<FCP_Rank_Expedition_Legion_Sentinel_1>{PAWN} pushed past the edge of any territory the Legion holds, charting ground for the next conquest.</FCP_Rank_Expedition_Legion_Sentinel_1>
+	<FCP_Rank_Expedition_Legion_Sentinel_2>{PAWN} came back from unclaimed land with a full report and word of a region ready to kneel or burn.</FCP_Rank_Expedition_Legion_Sentinel_2>
+	<FCP_Rank_Expedition_Legion_Sentinel_3>{PAWN} spent nearly two weeks beyond contact and returned with news that will matter to Caesar himself.</FCP_Rank_Expedition_Legion_Sentinel_3>
+	<FCP_Rank_Expedition_Legion_Sentinel_4>{PAWN} walked back into the Fort carrying proof of what was found at the edge of the map, dust and blood in equal measure.</FCP_Rank_Expedition_Legion_Sentinel_4>
+
+</LanguageData>

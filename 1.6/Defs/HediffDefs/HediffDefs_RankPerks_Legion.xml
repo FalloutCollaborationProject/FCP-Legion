@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ Legion Rank Perks __________-->
+
+    <HediffDef Name="FCP_Hediff_Legion_RankBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+    </HediffDef>
+
+    <!--_____ Path of the Standard _____-->
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_Vexillarius</defName>
+        <label>Vexillarius training</label>
+        <description>Drilled to hold the standard high and never break formation.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>3</MeleeHitChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_Centurion</defName>
+        <label>Centurion training</label>
+        <description>Command experience over a full century of Legionaries.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>5</MeleeHitChance>
+                    <SocialImpact>0.08</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_Legate</defName>
+        <label>Legate training</label>
+        <description>Command of entire legions in Caesar's name.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>7</MeleeHitChance>
+                    <SocialImpact>0.1</SocialImpact>
+                    <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_Praetorian</defName>
+        <label>Praetorian training</label>
+        <description>Caesar's personal guard, the finest warriors in the Legion.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>9</MeleeHitChance>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                    <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--_____ Path of the Frumentarius _____-->
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_FrumentariusInitiate</defName>
+        <label>Frumentarius Initiate training</label>
+        <description>Early instruction in moving unseen through enemy territory.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDodgeChance>0.03</MeleeDodgeChance>
+                    <SocialImpact>0.04</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_Frumentarius</defName>
+        <label>Frumentarius training</label>
+        <description>Trained to operate alone deep in hostile territory.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>4</MeleeHitChance>
+                    <MeleeDodgeChance>0.06</MeleeDodgeChance>
+                    <SocialImpact>0.08</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_MasterFrumentarius</defName>
+        <label>Master Frumentarius training</label>
+        <description>Runs Caesar's entire network of spies and assassins.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>7</MeleeHitChance>
+                    <MeleeDodgeChance>0.1</MeleeDodgeChance>
+                    <SocialImpact>0.12</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--_____ Summit _____-->
+
+    <HediffDef ParentName="FCP_Hediff_Legion_RankBase">
+        <defName>FCP_Hediff_Legion_Rank_Caesar</defName>
+        <label>Caesar's authority</label>
+        <description>The final word on every campaign, every execution, and every law.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>8</MeleeHitChance>
+                    <SocialImpact>0.15</SocialImpact>
+                    <ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Caesar Presence Aura -->
+
+    <HediffDef>
+        <defName>FCP_Hediff_Legion_Caesar_Presence</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Caesar's presence</label>
+        <description>Caesar leads from the field. Nearby Legionaries fight without fear of failure.</description>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>310</disappearsAfterTicks>
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.2</MoveSpeed>
+                    <MeleeHitChance>3</MeleeHitChance>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!-- Caesar Rally -->
+
+    <HediffDef>
+        <defName>FCP_Hediff_Legion_Caesar_Rally</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>rallied</label>
+        <description>Caesar has called the Legion to arms. A surge of speed and fervor answers the call.</description>
+        <isBad>false</isBad>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>2500</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>1</MoveSpeed>
+                    <MeleeHitChance>5</MeleeHitChance>
+                    <MeleeDodgeChance>0.1</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

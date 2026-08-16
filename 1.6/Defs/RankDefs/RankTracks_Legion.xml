@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FCP.Ranks.RankTrackDef>
+        <defName>FCP_RankTrack_Legion</defName>
+        <label>Legion Ranks</label>
+        <iconPath>World/FCP_LegionIcon</iconPath>
+        <rootTier>FCP_Rank_Legion_Recruit</rootTier>
+        <owningFaction>FCP_Faction_Caesars_Legion</owningFaction>
+        <collectiveNoun>the Legion</collectiveNoun>
+        <drillLabel>Exercitium</drillLabel>
+        <drillDesc>Spar with any colonist in the Roman style. Both stop, stand apart, and draw their weapons. Both gain skill XP. Once per day.</drillDesc>
+        <studyLabel>Doctrina</studyLabel>
+        <studyDesc>Study the tradecraft of the Frumentarii with another initiate. Both gain skill XP. Once per day.</studyDesc>
+        <inspectLabel>Censura</inspectLabel>
+        <inspectDesc>Inspect a lower-ranked legionary's weapon and armor as Caesar's law demands. Well-kept gear earns praise, neglected gear earns the lash's warning.</inspectDesc>
+        <punishLabel>Impose Poena...</punishLabel>
+        <punishDesc>Sentence a lower-ranked legionary to a stretch of hard labor for their failure, souring their mood. Once per day per legionary.</punishDesc>
+        <rallyLabel>Ad Arma!</rallyLabel>
+        <rallyDesc>Call {0} to arms with a burst of speed and battle-fury. Once every few days.</rallyDesc>
+        <fallInLabel>Formatio</fallInLabel>
+        <fallInDesc>Order {0} to form ranks behind you, up to four deep, interrupting whatever they're doing. They hold formation until released.</fallInDesc>
+        <dismissLabel>Dimissio</dismissLabel>
+        <dismissDesc>Release {0} from formation, letting them return to their duties.</dismissDesc>
+    </FCP.Ranks.RankTrackDef>
+
+</Defs>

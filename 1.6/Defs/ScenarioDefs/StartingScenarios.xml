@@ -9,6 +9,10 @@
             <summary>A handful of Legion soldiers, cut off from the main army, start over in the wastes.</summary>
             <parts>
 
+                <li Class="FCP.Core.GOAT.ScenPart_GOATExam">
+                    <def>FCP_GOATExam</def>
+                </li>
+
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>8</pawnChoiceCount>
@@ -65,8 +69,9 @@
                     <count>5</count>
                 </li>
 
-                <li Class="ScenPart_GameStartDialog">
+                <li Class="FCP.Core.ScenPart_TerminalStartDialog">
                     <def>GameStartDialog</def>
+                    <title>Rally Point</title>
                     <text>It is the year [FCP_Year]. The Rangers hit the column at the river crossing and Caesar's banner went down with half the cohort. Your decanus rallied who he could and marched them west, away from NCR patrols, away from anyone who'd recognize Legion colors.\n\nProfligates or not, this ground is empty enough to hold. The Legion teaches that discipline survives where men don't. Prove it.</text>
                 </li>
 

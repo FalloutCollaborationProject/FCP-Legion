@@ -9,6 +9,13 @@
         <defName>FCP_Faction_Caesars_Legion</defName>
         <label>Caesar's Legion</label>
         <description>Caesar’s Legion is the fearsome group which conquered most of the former states of Arizona, New Mexico, Colorado, and Utah. The Legion styles itself after the ancient roman legionnaires and uses many low-tech weapons such as javelins and crude but effective melee weapons. They are cruel, warlike, and known to frequently commit massacres against civilians, which they view as dissolute and profligate. Caesar, or Edward Sallow as he was once known, leads his slave armies as an iron fisted dictator and pushes them ever forward to claim new territories for their leader, the self-proclaimed son of Mars himself. Before long, the Legion stood at the shores of the Colorado river and set their eyes on the gleaming towers of New Vegas and California beyond them.</description>
+        <royalTitleTags>
+            <li>FCP_Title_Legion</li>
+        </royalTitleTags>
+        <royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">Glory</royalFavorLabel>
+        <royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+        <royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty">
+        </royalTitleInheritanceRelations>
         <colorSpectrum>
             <li>(1, 1, 1)</li>
         </colorSpectrum>
@@ -192,9 +199,11 @@
                 <characterDefs>
                     <li>FCP_Character_Legion_Frumentarius_Picus</li>
                     <li>FCP_Character_Legion_Frumentarius_Cursor_Lucullus</li>
+                    <li>FCP_Character_Legion_Frumentarius_Cato_Hostilius</li>
                     <li>FCP_Character_Legion_Decanus_Severus</li>
                     <li>FCP_Character_Legion_Decanus_Karl</li>
                     <li>FCP_Character_Legion_Veteran_Otho</li>
+                    <li>FCP_Character_Legion_Veteran_Atticus</li>
                 </characterDefs>
                 <characterChance>0.30</characterChance>
             </li>
@@ -277,6 +286,12 @@
                 </enlistOptionsDefs>
                 <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
             </li>
+            <!-- Rank track -->
+            <li Class="FCP.Ranks.FactionExtension_RankTracks">
+                <rankTracks>
+                    <li>FCP_RankTrack_Legion</li>
+                </rankTracks>
+            </li>
             <!-- Ideology stuff -->
             <li Class="FCP.Factions.FactionExtension_FixedIdeo">
                 <ideoIconDef>FCP_Icon_Legion</ideoIconDef>
@@ -293,6 +308,10 @@
                         <newName>Instructor</newName>
                         <disableApparelRequirements>true</disableApparelRequirements>
                         <!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+                    </li>
+                    <li>
+                        <preceptDef>FCP_IdeoRole_Legion_Centurion</preceptDef>
+                        <disableApparelRequirements>true</disableApparelRequirements>
                     </li>
                 </roleOverrides>
             </li>
@@ -405,6 +424,9 @@
                     <!-- Boulder City -->
                     <li>
                         <name>Boulder City</name>
+                        <guaranteedCharacters>
+                            <li>FCP_Character_Legion_Frumentarius_Cato_Hostilius</li>
+                        </guaranteedCharacters>
                         <traders>
                             <li>
                                 <traderName>Boulder City Muster</traderName>
@@ -465,6 +487,9 @@
                     <!-- Legion Safehouse -->
                     <li>
                         <name>Legion Safehouse</name>
+                        <guaranteedCharacters>
+                            <li>FCP_Character_Legion_Veteran_Atticus</li>
+                        </guaranteedCharacters>
                         <traders>
                             <li>
                                 <traderName>Atticus' Cache</traderName>
