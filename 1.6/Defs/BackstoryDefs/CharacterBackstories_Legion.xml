@@ -407,53 +407,6 @@
         <bodyTypeGlobal>Male</bodyTypeGlobal>
     </BackstoryDef>
 
-    <!--_____ Centurion Severus _____-->
-
-    <!-- Childhood -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Centurion_Severus_Child</defName>
-        <bodyTypeMale>Male</bodyTypeMale>
-        <bodyTypeFemale>Female</bodyTypeFemale>
-        <identifier>FCP_Backstory_Centurion_Severus_Child</identifier>
-        <slot>Childhood</slot>
-        <title>Wasteland enforcer youth</title>
-        <titleShort>enforcer</titleShort>
-        <description>[PAWN_nameDef] grew up learning to enforce order through strength. [PAWN_pronoun] believed in harsh discipline and total obedience from an early age.</description>
-        <skillGains>
-            <Melee>4</Melee>
-            <Shooting>3</Shooting>
-            <Social>2</Social>
-        </skillGains>
-        <workDisables>Artistic, Caring</workDisables>
-        <spawnCategories>
-            <li>FCP_Character_Backstory_Centurion_Severus_Child</li>
-        </spawnCategories>
-    </BackstoryDef>
-
-    <!-- Adulthood -->
-
-    <BackstoryDef>
-        <defName>FCP_Backstory_Centurion_Severus_Adult</defName>
-        <identifier>FCP_Backstory_Centurion_Severus_Adult</identifier>
-        <slot>Adulthood</slot>
-        <title>Centurion of Dry Wells</title>
-        <titleShort>Centurion</titleShort>
-        <description>[PAWN_nameDef] commands Legion forces at Dry Wells, enforcing Caesar's will with brutal efficiency. [PAWN_pronoun] is ruthless in combat and shows no mercy to enemies or incompetent subordinates.</description>
-        <skillGains>
-            <Melee>8</Melee>
-            <Shooting>7</Shooting>
-            <Social>4</Social>
-            <Intellectual>2</Intellectual>
-        </skillGains>
-        <workDisables>Artistic, Caring</workDisables>
-        <requiredWorkTags>Violent</requiredWorkTags>
-        <spawnCategories>
-            <li>FCP_Character_Backstory_Centurion_Severus_Adult</li>
-        </spawnCategories>
-        <bodyTypeGlobal>Hulk</bodyTypeGlobal>
-    </BackstoryDef>
-
     <!--_____ Picus _____-->
 
     <!-- Childhood -->
@@ -589,6 +542,94 @@
         <requiredWorkTags>Violent</requiredWorkTags>
         <spawnCategories>
             <li>FCP_Character_Backstory_Silus_Adult</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    </BackstoryDef>
+
+    <!--_____ Alerio _____-->
+
+    <!-- Childhood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Alerio_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <identifier>FCP_Character_Backstory_Alerio_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Legion Informant's Ward</title>
+        <titleShort>Ward</titleShort>
+        <description>[PAWN_nameDef] was raised to blend in among profligates, taught to watch faces and read rooms long before [PAWN_pronoun] ever held a blade. [PAWN_possessive] instructors prized [PAWN_possessive] patience and stillness over raw aggression.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Alerio_Child</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <!-- Adulthood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Alerio_Adult</defName>
+        <identifier>FCP_Character_Backstory_Alerio_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Eyes on the Strip</title>
+        <titleShort>Frumentarius</titleShort>
+        <description>[PAWN_nameDef] operates openly on the New Vegas Strip, watching the comings and goings of the casinos and reporting back to Caesar. [PAWN_pronoun] speaks freely of [PAWN_possessive] loyalties without fear, trusting the neutrality of the Strip to keep [PAWN_objective] safe from reprisal.</description>
+        <skillGains>
+            <Social>7</Social>
+            <Intellectual>6</Intellectual>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <workDisables>ManualDumb</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Alerio_Adult</li>
+        </spawnCategories>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    </BackstoryDef>
+
+    <!--_____ Gabban _____-->
+
+    <!-- Childhood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Gabban_Child</defName>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <identifier>FCP_Character_Backstory_Gabban_Child</identifier>
+        <slot>Childhood</slot>
+        <title>Legionary Child</title>
+        <titleShort>Legionary Child</titleShort>
+        <description>[PAWN_nameDef] trained alongside the other recruits marked for the Frumentarii, drilled in the same disciplines of silence and deception as those who would one day walk in Vulpes Inculta's shadow.</description>
+        <skillGains>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Gabban_Child</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <!-- Adulthood -->
+
+    <BackstoryDef>
+        <defName>FCP_Character_Backstory_Gabban_Adult</defName>
+        <identifier>FCP_Character_Backstory_Gabban_Adult</identifier>
+        <slot>Adulthood</slot>
+        <title>Vulpes' Understudy</title>
+        <titleShort>Frumentarius</titleShort>
+        <description>[PAWN_nameDef] serves as Vulpes Inculta's understudy among the Frumentarii, briefed to step into his duties at Nipton should [PAWN_pronoun] ever be unable to complete them. [PAWN_pronoun] knows Caesar's inner circle and its business well enough to speak for it convincingly.</description>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>5</Intellectual>
+            <Shooting>4</Shooting>
+        </skillGains>
+        <workDisables>ManualDumb</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>FCP_Character_Backstory_Gabban_Adult</li>
         </spawnCategories>
         <bodyTypeGlobal>Thin</bodyTypeGlobal>
     </BackstoryDef>

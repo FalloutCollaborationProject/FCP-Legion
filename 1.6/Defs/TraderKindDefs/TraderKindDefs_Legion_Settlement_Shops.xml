@@ -130,7 +130,7 @@
 
             <!--__ Medicine __-->
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Healing_Powder</thingDef>
                 <countRange>25~60</countRange>
             </li>
@@ -227,7 +227,7 @@
 
             <!--__ Medicine __-->
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Healing_Powder</thingDef>
                 <countRange>20~50</countRange>
             </li>
@@ -321,7 +321,7 @@
 
             <!--__ Medicine __-->
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Healing_Powder</thingDef>
                 <countRange>20~50</countRange>
             </li>
@@ -424,7 +424,7 @@
 
             <!--__ Medicine __-->
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Healing_Powder</thingDef>
                 <countRange>20~50</countRange>
             </li>
@@ -577,7 +577,7 @@
 
             <!--__ Medicine __-->
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Healing_Powder</thingDef>
                 <countRange>20~50</countRange>
             </li>
@@ -746,7 +746,7 @@
 
             <!--__ Medicine __-->
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Healing_Powder</thingDef>
                 <countRange>30~70</countRange>
             </li>

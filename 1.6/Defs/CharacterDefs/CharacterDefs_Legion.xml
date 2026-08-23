@@ -340,43 +340,6 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
-    <!-- Severus -->
-
-    <FCP.Core.CharacterDef>
-        <defName>FCP_Character_Legion_Centurion_Severus</defName>
-        <pawnKind>FCP_Unique_Pawnkind_Centurion_Severus</pawnKind>
-        <xenotype>Baseliner</xenotype>
-        <faction>FCP_Faction_Caesars_Legion</faction>
-        <roles>
-            <li Class="FCP.Core.CharacterRole_FactionLeader">
-                <seniority>700</seniority>
-            </li>
-        </roles>
-        <definitions>
-            <!-- Rank -->
-            <li Class="FCP.Core.CharacterRankDefinition">
-                <tier>FCP_Rank_Legion_Centurion</tier>
-            </li>
-            <!-- Bio -->
-            <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName />
-                <lastName>Severus</lastName>
-                <nickname>Centurion Severus</nickname>
-                <gender>Male</gender>
-                <age>41</age>
-            </li>
-            <!-- Appearance -->
-            <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(55, 40, 30)</hairColor>
-                <hairDef>Bald</hairDef>
-                <beardDef>Circle</beardDef>
-                <skinColorOverride>(165, 135, 110)</skinColorOverride>
-                <headTypeDef>Male_AverageNormal</headTypeDef>
-                <bodyTypeDef>Hulk</bodyTypeDef>
-            </li>
-        </definitions>
-    </FCP.Core.CharacterDef>
-
     <!--_____ Frumentarii _____-->
 
     <!-- Picus -->
@@ -485,6 +448,80 @@
                 <beardDef>Goatee</beardDef>
                 <skinColorOverride>(190, 160, 135)</skinColorOverride>
                 <headTypeDef>Male_NarrowNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Alerio -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Legion_Frumentarius_Alerio</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Alerio</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Caesars_Legion</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>470</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <!-- Rank -->
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Legion_Frumentarius</tier>
+            </li>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Alerio</lastName>
+                <nickname>Watcher of the Strip</nickname>
+                <gender>Male</gender>
+                <age>34</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(80, 60, 45)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 160, 135)</skinColorOverride>
+                <headTypeDef>Male_NarrowNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Gabban -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Legion_Frumentarius_Gabban</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Gabban</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Caesars_Legion</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>460</seniority>
+            </li>
+        </roles>
+        <definitions>
+            <!-- Rank -->
+            <li Class="FCP.Core.CharacterRankDefinition">
+                <tier>FCP_Rank_Legion_Frumentarius</tier>
+            </li>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Gabban</lastName>
+                <nickname>Vulpes' Understudy</nickname>
+                <gender>Male</gender>
+                <age>31</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 55, 40)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(185, 155, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Thin</bodyTypeDef>
             </li>
         </definitions>
@@ -647,6 +684,11 @@
         <pawnKind>FCP_Unique_Pawnkind_Ulysses</pawnKind>
         <xenotype>Baseliner</xenotype>
         <faction>FCP_Faction_Caesars_Legion</faction>
+        <roles>
+            <li Class="FCP.Core.CharacterRole_FactionLeader">
+                <seniority>820</seniority>
+            </li>
+        </roles>
         <definitions>
             <!-- Rank -->
             <li Class="FCP.Core.CharacterRankDefinition">

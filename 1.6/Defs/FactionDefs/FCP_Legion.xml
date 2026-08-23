@@ -155,6 +155,7 @@
                     <li>FCP_Character_Legion_Legate_Lanius</li>
                     <li>FCP_Character_Legion_Praetorian_Lucius</li>
                     <li>FCP_Character_Legion_Frumentarius_Vulpes_Inculta</li>
+                    <li>FCP_Character_Legion_Frumentarius_Ulysses</li>
                 </characterDefs>
                 <characterChance>0.20</characterChance>
             </li>
@@ -181,7 +182,6 @@
                     <li>FCP_Character_Legion_Centurion_Alexus</li>
                     <li>FCP_Character_Legion_Centurion_Canyon_Runner</li>
                     <li>FCP_Character_Legion_Centurion_Gaius_Magnus</li>
-                    <li>FCP_Character_Legion_Centurion_Severus</li>
                 </characterDefs>
                 <characterChance>0.30</characterChance>
             </li>
@@ -200,6 +200,8 @@
                     <li>FCP_Character_Legion_Frumentarius_Picus</li>
                     <li>FCP_Character_Legion_Frumentarius_Cursor_Lucullus</li>
                     <li>FCP_Character_Legion_Frumentarius_Cato_Hostilius</li>
+                    <li>FCP_Character_Legion_Frumentarius_Alerio</li>
+                    <li>FCP_Character_Legion_Frumentarius_Gabban</li>
                     <li>FCP_Character_Legion_Decanus_Severus</li>
                     <li>FCP_Character_Legion_Decanus_Karl</li>
                     <li>FCP_Character_Legion_Veteran_Otho</li>
@@ -227,10 +229,7 @@
                     <FCP_Legion_Quartermaster>1</FCP_Legion_Quartermaster>
                 </traders>
                 <carriers>
-                    <Muffalo>6</Muffalo>
-                    <Dromedary>5</Dromedary>
-                    <Alpaca>2</Alpaca>
-                    <Elephant>1</Elephant>
+                    <FCP_Animal_Brahmin>14</FCP_Animal_Brahmin>
                 </carriers>
                 <guards>
                     <FCP_Animal_Legion_Guard_Dog MayRequire="Rick.FCP.Animals">3</FCP_Animal_Legion_Guard_Dog>
@@ -477,6 +476,9 @@
                     <!-- Dry Wells -->
                     <li>
                         <name>Dry Wells</name>
+                        <guaranteedPawnKinds>
+                            <FCP_Legion_Slave_Trader>1</FCP_Legion_Slave_Trader>
+                        </guaranteedPawnKinds>
                         <traders>
                             <li>
                                 <traderName>Dry Wells Slave Pens</traderName>

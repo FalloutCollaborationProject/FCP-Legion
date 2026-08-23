@@ -16,7 +16,7 @@
         <combatPower>150</combatPower>
         <itemQuality>Legendary</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
-        <apparelMoney>9999~9999</apparelMoney>
+        <apparelMoney>0</apparelMoney>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelRequired>
             <li>FCP_Apparel_Caesar_Robes</li>
@@ -48,7 +48,7 @@
                     <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
                     <countRange>5~10</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>5~8</countRange>
                 </li>
@@ -97,7 +97,7 @@
                     <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
                     <countRange>5~8</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>4~6</countRange>
                 </li>
@@ -145,7 +145,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>4~7</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>3~5</countRange>
                 </li>
@@ -195,7 +195,7 @@
                     <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
                     <countRange>3~6</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~4</countRange>
                 </li>
@@ -240,7 +240,7 @@
                 <li>
                     <thingDef>FCP_Currency_Legion_Denarius</thingDef>
                     <countRange>100~200</countRange>
-                </li><li MayRequire="Rick.FCP.Chems">
+                </li><li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~4</countRange>
                 </li>
@@ -290,7 +290,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>3~5</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~4</countRange>
                 </li>
@@ -340,7 +340,7 @@
                     <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
                     <countRange>3~5</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~4</countRange>
                 </li>
@@ -385,7 +385,7 @@
                 <li>
                     <thingDef>FCP_Currency_Legion_Denarius</thingDef>
                     <countRange>100~200</countRange>
-                </li><li MayRequire="Rick.FCP.Chems">
+                </li><li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~4</countRange>
                 </li>
@@ -435,57 +435,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>3~5</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
-                    <thingDef>FCP_Chem_Healing_Powder</thingDef>
-                    <countRange>2~4</countRange>
-                </li>
-            </subOptionsChooseOne>
-        </inventoryOptions>
-    </PawnKindDef>
-
-    <!-- Severus -->
-
-    <PawnKindDef ParentName="FCP_LegionkindBase">
-        <defName>FCP_Unique_Pawnkind_Centurion_Severus</defName>
-        <showInDebugSpawner>false</showInDebugSpawner>
-        <label>Centurion Severus</label>
-        <defaultFactionDef>FCP_Faction_Caesars_Legion</defaultFactionDef>
-        <combatPower>100</combatPower>
-        <itemQuality>Good</itemQuality>
-        <gearHealthRange>0.9~1.0</gearHealthRange>
-        <apparelRequired>
-            <li>FCP_Apparel_Legion_Centurion_Armor</li>
-            <li>FCP_Apparel_Legion_Centurion_Helmet</li>
-        </apparelRequired>
-        <weaponMoney>300~500</weaponMoney>
-        <weaponTags>
-            <li>NeolithicMeleeAdvanced</li>
-            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Rifle</li>
-        </weaponTags>
-        <initialWillRange>6~7</initialWillRange>
-        <initialResistanceRange>25~35</initialResistanceRange>
-        <backstoryFiltersOverride>
-            <li>
-                <categoriesChildhood>
-                    <li>FCP_Character_Backstory_Centurion_Severus_Child</li>
-                </categoriesChildhood>
-                <categoriesAdulthood>
-                    <li>FCP_Character_Backstory_Centurion_Severus_Adult</li>
-                </categoriesAdulthood>
-            </li>
-        </backstoryFiltersOverride>
-        <inventoryOptions>
-            <skipChance>0.0</skipChance>
-            <subOptionsChooseOne>
-                <li>
-                    <thingDef>FCP_Currency_Legion_Denarius</thingDef>
-                    <countRange>100~200</countRange>
-                </li>
-                <li MayRequire="Rick.FCP.WastelandFood">
-                    <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
-                    <countRange>3~5</countRange>
-                </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~4</countRange>
                 </li>
@@ -535,7 +485,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>3~5</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~3</countRange>
                 </li>
@@ -580,7 +530,7 @@
                 <li>
                     <thingDef>FCP_Currency_Legion_Denarius</thingDef>
                     <countRange>80~150</countRange>
-                </li><li MayRequire="Rick.FCP.Chems">
+                </li><li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~3</countRange>
                 </li>
@@ -630,7 +580,107 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>2~4</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
+                    <thingDef>FCP_Chem_Healing_Powder</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Alerio -->
+
+    <PawnKindDef ParentName="FCP_LegionkindBase">
+        <defName>FCP_Unique_Pawnkind_Alerio</defName>
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <label>Frumentarius Alerio</label>
+        <defaultFactionDef>FCP_Faction_Caesars_Legion</defaultFactionDef>
+        <combatPower>90</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <apparelRequired>
+            <li>FCP_Apparel_Legion_Vexillarius_Armor</li>
+            <li>FCP_Apparel_Legion_Vexillarius_Helmet</li>
+        </apparelRequired>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>6~7</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Alerio_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Alerio_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>2~4</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
+                    <thingDef>FCP_Chem_Healing_Powder</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Gabban -->
+
+    <PawnKindDef ParentName="FCP_LegionkindBase">
+        <defName>FCP_Unique_Pawnkind_Gabban</defName>
+        <showInDebugSpawner>false</showInDebugSpawner>
+        <label>Frumentarius Gabban</label>
+        <defaultFactionDef>FCP_Faction_Caesars_Legion</defaultFactionDef>
+        <combatPower>88</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <apparelRequired>
+            <li>FCP_Apparel_Legion_Vexillarius_Armor</li>
+            <li>FCP_Apparel_Legion_Vexillarius_Helmet</li>
+        </apparelRequired>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>5~6</initialWillRange>
+        <initialResistanceRange>22~32</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Character_Backstory_Gabban_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Character_Backstory_Gabban_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <inventoryOptions>
+            <skipChance>0.0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>FCP_Currency_Legion_Denarius</thingDef>
+                    <countRange>80~150</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.WastelandFood">
+                    <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
+                    <countRange>2~4</countRange>
+                </li>
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~3</countRange>
                 </li>
@@ -680,7 +730,7 @@
                     <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
                     <countRange>2~4</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>1~2</countRange>
                 </li>
@@ -712,10 +762,10 @@
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>
-                    <li>FCP_Character_Backstory_Karl_Child</li>
+                    <li MayRequire="Rick.FCP.GreatKhans">FCP_Character_Backstory_Karl_Child</li>
                 </categoriesChildhood>
                 <categoriesAdulthood>
-                    <li>FCP_Character_Backstory_Karl_Adult</li>
+                    <li MayRequire="Rick.FCP.GreatKhans">FCP_Character_Backstory_Karl_Adult</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
@@ -725,7 +775,7 @@
                 <li>
                     <thingDef>FCP_Currency_Legion_Denarius</thingDef>
                     <countRange>60~120</countRange>
-                </li><li MayRequire="Rick.FCP.Chems">
+                </li><li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>1~2</countRange>
                 </li>
@@ -775,7 +825,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>2~3</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>1~2</countRange>
                 </li>
@@ -875,7 +925,7 @@
                     <thingDef>FCP_Food_Brahmin_Pot_Pie</thingDef>
                     <countRange>2~4</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~3</countRange>
                 </li>
@@ -925,7 +975,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>2~4</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>2~3</countRange>
                 </li>
@@ -975,7 +1025,7 @@
                     <thingDef>FCP_Food_Black_Blood_Sausage</thingDef>
                     <countRange>2~3</countRange>
                 </li>
-                <li MayRequire="Rick.FCP.Chems">
+                <li MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                     <thingDef>FCP_Chem_Healing_Powder</thingDef>
                     <countRange>1~2</countRange>
                 </li>
