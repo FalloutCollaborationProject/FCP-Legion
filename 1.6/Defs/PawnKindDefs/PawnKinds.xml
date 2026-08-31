@@ -19,7 +19,7 @@
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.2~1.1</gearHealthRange>
         <apparelTags>
-            <li>FCP_Slave_Apparel</li>
+            <li MayRequire="Rick.FCP.Wastelanders">FCP_Slave_Apparel</li>
         </apparelTags>
         <techHediffsMoney>50~50</techHediffsMoney>
         <techHediffsTags>
@@ -727,7 +727,7 @@
         <requiredWorkTags>
             <li>Violent</li>
         </requiredWorkTags>
-        <weaponMoney>150~150</weaponMoney>
+        <weaponMoney>700~1000</weaponMoney>
         <weaponTags>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
             <li MayRequire="Rick.FCP.BallisticWeapons">FCP_SMG</li>

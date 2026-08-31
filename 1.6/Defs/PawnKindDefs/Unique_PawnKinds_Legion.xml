@@ -762,10 +762,10 @@
         <backstoryFiltersOverride>
             <li>
                 <categoriesChildhood>
-                    <li MayRequire="Rick.FCP.GreatKhans">FCP_Character_Backstory_Karl_Child</li>
+                    <li>FCP_Character_Backstory_Karl_Child</li>
                 </categoriesChildhood>
                 <categoriesAdulthood>
-                    <li MayRequire="Rick.FCP.GreatKhans">FCP_Character_Backstory_Karl_Adult</li>
+                    <li>FCP_Character_Backstory_Karl_Adult</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>

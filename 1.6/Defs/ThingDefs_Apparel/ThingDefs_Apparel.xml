@@ -1031,7 +1031,7 @@
     <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
         <defName>FCP_Apparel_Legion_Centurion_Helmet</defName>
         <label>Legion Centurion Helmet</label>
-        <description>Worn by the advance scouts of Caesar's Legion, the vexillarii, this helmet is fashioned from the pelt from the head of a coyote. It offers little protection as its main use is symbolic in nature.</description>
+        <description>A heavy helmet worn by the Legion's centurions, assembled from scavenged combat helmets and armor plating reinforced with steel. Battered and scarred from countless engagements, it marks the wearer as an officer to be obeyed - and offers real protection to go with the authority.</description>
         <recipeMaker>
             <researchPrerequisite>FCP_Legion_Advanced_Equipment</researchPrerequisite>
             <skillRequirements>

@@ -1033,7 +1033,7 @@
         <defName>FCP_Legion_Enslaved_Tribal</defName>
         <bodyTypeMale>Male</bodyTypeMale>
         <bodyTypeFemale>Female</bodyTypeFemale>
-        <identifier>FCP_Legion_Enslaved_Tribal Tribal</identifier>
+        <identifier>FCP_Legion_Enslaved_Tribal</identifier>
         <slot>Childhood</slot>
         <title>Enslaved Tribal</title>
         <titleShort>Enslaved Tribal</titleShort>
