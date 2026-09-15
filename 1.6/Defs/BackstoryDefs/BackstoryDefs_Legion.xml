@@ -1237,8 +1237,8 @@
         <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Healers_Child</identifier>
         <slot>Childhood</slot>
-        <title>Healer’s Child</title>
-        <titleShort>Healer’s Child</titleShort>
+        <title>Healer's Child</title>
+        <titleShort>Healer's Child</titleShort>
         <description>[PAWN_nameDef]’s mother was a healer in the Legion. While the Legion did not have access to high-tech medicine due to their refusal to use modern technology, the Legion’s healers managed to cook up various poultices, ointments, and other herbal remedies. [PAWN_nameDef] learned a good deal about healing from [PAWN_possessive] mother.</description>
         <skillGains>
             <Shooting>-2</Shooting>
@@ -1264,8 +1264,8 @@
         <bodyTypeFemale>Female</bodyTypeFemale>
         <identifier>FCP_Legion_Coin_Minters_Child</identifier>
         <slot>Childhood</slot>
-        <title>Coin Minter’s Child</title>
-        <titleShort>Coin Minter’s Child</titleShort>
+        <title>Coin Minter's Child</title>
+        <titleShort>Coin Minter's Child</titleShort>
         <description>Like many other larger political entities, Caesar had his Legion mint coins adorned with his profile. [PAWN_nameDef] was born to a minter and enjoyed a relatively peaceful childhood, as the Legion left [PAWN_possessive] family be, due to the rarity of the skill provided by them.</description>
         <skillGains>
             <Mining>2</Mining>
